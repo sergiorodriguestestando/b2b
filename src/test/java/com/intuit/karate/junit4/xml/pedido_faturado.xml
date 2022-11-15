@@ -1,0 +1,158 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:boor="http://www.accurate.com/acec/AcecBOSOAIntegration/BOOrderIntegration">
+   <soapenv:Header />
+   <soapenv:Body>
+      <boor:integrateOrderRequest>
+         <order xmlns:ns2="http://www.accurate.com/acec/InvoiceInfo" xmlns="http://www.accurate.com/acec/order">
+            <orderId>#(pedido)</orderId>
+            <totalAmount>312.81</totalAmount>
+            <totalDiscountAmount>0.00</totalDiscountAmount>
+            <purchaseDate>2022-10-27T13:30:54-03:00</purchaseDate>
+            <sessionCreationDate>2022-10-27T13:30:54-03:00</sessionCreationDate>
+            <applicationVersion>1</applicationVersion>
+            <saleChannel>MDB</saleChannel>
+                                    <deliveries>
+               <delivery>
+                  <deliveryId>1</deliveryId>
+                  <orderId>#(pedido)</orderId>
+                  <totalAmount>312.81</totalAmount>
+                  <totalDiscountAmount>0.00</totalDiscountAmount>
+                  <orderLineList>
+                                       <orderLine>
+                        <sku>7896085086229C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Light Adria 142g - Caixa com 32 unida</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                       <orderLine>
+                        <sku>7896085086205C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Tradicional Adria 142g - Caixa com 32</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                       <orderLine>
+                        <sku>7896085086212C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Integral Adria 142g - Caixa com 32 un</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                    </orderLineList>
+                  <freightAmount>
+                     <chargedAmount>0.00</chargedAmount>
+                     <actualAmount>0.00</actualAmount>
+                     <commercialAmount>0.00</commercialAmount>
+                     <freightTime>3</freightTime>
+                     <pickupLeadTime>0</pickupLeadTime>
+                     <logisticContract>NORMAL</logisticContract>
+                  </freightAmount>
+                  <wareHouseCNPJ>0</wareHouseCNPJ>
+                  <deliveryAddress>
+                     <addressId>53920</addressId>
+                     <recipientNm>J.M PEREIRA JUNIOR CIA LTDA</recipientNm>
+                     <address>RUA JACATIRAO</address>
+                     <addressNr>350</addressNr>
+                     <quarter>CAROLINA</quarter>
+                     <city>DUQUE DE CAXIAS</city>
+                     <state>RJ</state>
+                     <countryId>BR</countryId>
+                     <postalCd>25060140</postalCd>
+                     <postalCdIntl>25060140</postalCdIntl>
+                     <friendlyNm>J.M PEREIRA JUNIOR CIA LTDA</friendlyNm>
+                     <lift>false</lift>
+                     <intercom>false</intercom>
+                  </deliveryAddress>
+               </delivery>
+            </deliveries>
+            <customer>
+               <customerId>29331550000175</customerId>
+                              <documentNumber>29331550000175</documentNumber>
+               <name>J.M PEREIRA JUNIOR CIA LTDA</name>
+               <email>glicose70@gmail.com</email>
+               <phoneMobile>21971632449</phoneMobile>
+               <phoneOffice>21971632449</phoneOffice>
+               <state_subscription>80212526</state_subscription>
+               <representativeNm>J.M PEREIRA JUNIOR CIA LTDA</representativeNm>
+               <createDt>2022-09-14T12:10:39-03:00</createDt>
+               <updateDt>2022-09-14T12:10:39-03:00</updateDt>
+            </customer>
+            <billingAddress>
+               <addressId>53920</addressId>
+               <recipientNm>J.M PEREIRA JUNIOR CIA LTDA</recipientNm>
+               <address>RUA JACATIRAO</address>
+               <addressNr>350</addressNr>
+               <quarter>CAROLINA</quarter>
+               <city>DUQUE DE CAXIAS</city>
+               <state>RJ</state>
+               <countryId>BR</countryId>
+               <postalCd>25060140</postalCd>
+               <postalCdIntl>25060140</postalCdIntl>
+               <friendlyNm>J.M PEREIRA JUNIOR CIA LTDA</friendlyNm>
+               <lift>false</lift>
+               <intercom>false</intercom>
+            </billingAddress>
+            <paymentList>
+                              <payment>
+                                    <abstractPayment>
+                     <paymentType>CRL-28</paymentType>
+                     <value>312.81</value>
+                     <billType>SELLER</billType>
+                  </abstractPayment>
+                                 </payment>
+                           </paymentList>
+            <freightChargedAmount>0.00</freightChargedAmount>
+            <freightActualAmount>0.00</freightActualAmount>
+             <countDistinctSku>3</countDistinctSku>
+         </order>
+      </boor:integrateOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

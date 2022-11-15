@@ -1,0 +1,9 @@
+<testsuite failures="0" name="com/intuit/karate/junit4/customTags/customTags.feature" skipped="0" tests="4" time="0.002645"><testcase classname="com.intuit.karate.junit4.customTags.customTags" name="custom tags are present in xml" time="0.000577"><properties><property name="requirement" value="CALC-2"/><property name="test_key" value="CALC-2"/></properties><system-out>* print 'xray' ............................................................ passed
+</system-out></testcase>
+<testcase classname="com.intuit.karate.junit4.customTags.customTags" name="xray link to requirement" time="0.00048"><properties><property name="requirement" value="CALC-3"/></properties><system-out>* print 'xray simple requirement' ......................................... passed
+</system-out></testcase>
+<testcase classname="com.intuit.karate.junit4.customTags.customTags" name="xray link to test" time="0.000474"><properties><property name="test_key" value="CALC-4"/></properties><system-out>* print 'xray simple test' ................................................ passed
+</system-out></testcase>
+<testcase classname="com.intuit.karate.junit4.customTags.customTags" name="no tags" time="0.001114"><system-out>* print 'without additional tags' ......................................... passed
+</system-out></testcase>
+</testsuite>

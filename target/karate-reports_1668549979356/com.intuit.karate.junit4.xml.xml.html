@@ -1,0 +1,5562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("fb6a444d-7c79-42db-a330-621228df1334",{name:"ter01277"});
+    posthog.capture("report_feature",{karate_version:"1.3.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.intuit.karate.junit4.xml.xml</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">34</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-11-15 07:06:18 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>xml empty elements and null</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:13]"><span>[2:13]</span> <span>simple fuzzy matching</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:19]"><span>[3:19]</span> <span>pretty print xml</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:24]"><span>[4:24]</span> <span>test removing and adding elements / attributes</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:34]"><span>[5:34]</span> <span>test removing elements from xml from js</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:39]"><span>[6:39]</span> <span>dynamic xpath that uses variables</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7:50]"><span>[7:50]</span> <span>placeholders using xml embedded expressions</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8:71]"><span>[8:71]</span> <span>placeholders using string replace</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[9:84]"><span>[9:84]</span> <span>set xml chunks using xpath</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[10:106]"><span>[10:106]</span> <span>set xml chunks using embedded expressions</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[11:130]"><span>[11:130]</span> <span>set via table</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[12:152]"><span>[12:152]</span> <span>set via table, variable and xml nodes will be auto-built</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[13:166]"><span>[13:166]</span> <span>set via table, mixing xml chunks</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[14:182]"><span>[14:182]</span> <span>set via table, build xml including attributes and repeated elements</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[15.1:217]"><span>[15.1:217]</span> <span>conditionally build xml from scenario-outline and examples</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[15.2:218]"><span>[15.2:218]</span> <span>conditionally build xml from scenario-outline and examples</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[15.3:219]"><span>[15.3:219]</span> <span>conditionally build xml from scenario-outline and examples</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[16:222]"><span>[16:222]</span> <span>a cleaner way to achieve the above by using tables and the &#39;set&#39; keyword</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[17:233]"><span>[17:233]</span> <span>karate.set() is another way to conditionally modify xml</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[18:256]"><span>[18:256]</span> <span>creating xml with repeating elements in a loop</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[19:295]"><span>[19:295]</span> <span>xml containing DTD reference</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[20:299]"><span>[20:299]</span> <span>xml containing DTD complex</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[21:310]"><span>[21:310]</span> <span>xml containing a CDATA section</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[22:325]"><span>[22:325]</span> <span>CDATA and simple string embedded expression</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[23:330]"><span>[23:330]</span> <span>CDATA and xml embedded expression</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[24:345]"><span>[24:345]</span> <span>CDATA and xml string embedded expression</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[25:353]"><span>[25:353]</span> <span>two CDATA sections is tricky - but xpath returns a list</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[26:378]"><span>[26:378]</span> <span>xml with attributes but null value</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[27:387]"><span>[27:387]</span> <span>attribute embedded expression but empty / null element text</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[28:410]"><span>[28:410]</span> <span>attribute embedded expression but empty / null element text</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[29:436]"><span>[29:436]</span> <span>repeated xml elements and fuzzy matching</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[30:446]"><span>[30:446]</span> <span>matching ignores xml prefixes</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[31:460]"><span>[31:460]</span> <span>xml to map conversion should ignore comments</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[32:476]"><span>[32:476]</span> <span>xml matching involving karate-schema substitutions</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/intuit/karate/junit4/xml/xml.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">xml samples and tests</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">xml empty elements and null</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>7</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def foo = &lt;root&gt;&lt;bar/&gt;&lt;/root&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># unfortunately XML does not have a concept of a null value</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># empty tags are always considered to have the text value of &#39;&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match foo == &lt;root&gt;&lt;bar&gt;&lt;/bar&gt;&lt;/root&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match foo/root/bar == &#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match foo/root/bar == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># check if a path does not exist</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match foo/root/nope == &#39;#notpresent&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:13]</span>
+                <span class="scenario-name">simple fuzzy matching</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>6</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml = &lt;root&gt;&lt;hello&gt;world&lt;/hello&gt;&lt;foo&gt;bar&lt;/foo&gt;&lt;/root&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.14.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match xml == &lt;root&gt;&lt;hello&gt;world&lt;/hello&gt;&lt;foo&gt;#ignore&lt;/foo&gt;&lt;/root&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml = &lt;root&gt;&lt;hello foo=&quot;bar&quot;&gt;world&lt;/hello&gt;&lt;/root&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match xml == &lt;root&gt;&lt;hello foo=&quot;#ignore&quot;&gt;world&lt;/hello&gt;&lt;/root&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:19]</span>
+                <span class="scenario-name">pretty print xml</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>8</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def search = { number: &#39;123456&#39;, wireless: true, voip: false, tollFree: false }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.20.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml = read(&#39;soap1.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;pretty print:&#39;, xml</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">19:05:35.956 [print] pretty print: &lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:acc=&quot;http://foo/bar&quot;&gt;
+  &lt;soapenv:Header/&gt;
+  &lt;soapenv:Body&gt;
+    &lt;acc:getAccountByPhoneNumber&gt;
+      &lt;acc:phoneNumber&gt;#(phoneNumber)&lt;/acc:phoneNumber&gt;
+      &lt;acc:phoneNumberSearchOption&gt;
+        &lt;acc:searchWirelessInd&gt;true&lt;/acc:searchWirelessInd&gt;
+        &lt;acc:searchVoipInd&gt;false&lt;/acc:searchVoipInd&gt;
+        &lt;acc:searchTollFreeInd&gt;false&lt;/acc:searchTollFreeInd&gt;
+      &lt;/acc:phoneNumberSearchOption&gt;
+    &lt;/acc:getAccountByPhoneNumber&gt;
+  &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:24]</span>
+                <span class="scenario-name">test removing and adding elements / attributes</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>31</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def base = &lt;query&gt;&lt;name&gt;foo&lt;/name&gt;&lt;/query&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.25.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>remove base /query/name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match base == &lt;query/&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set base /query/foo = &#39;bar&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set base /query/@baz = &#39;ban&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match base == &lt;query baz=&quot;ban&quot;&gt;&lt;foo&gt;bar&lt;/foo&gt;&lt;/query&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>remove base /query/@baz</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match base == &lt;query&gt;&lt;foo&gt;bar&lt;/foo&gt;&lt;/query&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:34]</span>
+                <span class="scenario-name">test removing elements from xml from js</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>6</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def base = &lt;query&gt;&lt;name&gt;foo&lt;/name&gt;&lt;/query&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.35.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.remove(&#39;base&#39;, &#39;/query/name&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match base == &lt;query/&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:39]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:39]</span>
+                <span class="scenario-name">dynamic xpath that uses variables</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>33</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml = &lt;query&gt;&lt;name&gt;&lt;foo&gt;bar&lt;/foo&gt;&lt;/name&gt;&lt;/query&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.40.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def elementName = &#39;name&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def name = karate.xmlPath(xml, &#39;/query/&#39; + elementName + &#39;/foo&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match name == &#39;bar&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def queryName = karate.xmlPath(xml, &#39;/query/&#39; + elementName)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match queryName == &lt;name&gt;&lt;foo&gt;bar&lt;/foo&gt;&lt;/name&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def foo = &lt;root&gt;&lt;a&gt;1&lt;/a&gt;&lt;a&gt;2&lt;/a&gt;&lt;/root&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tmp = karate.xmlPath(foo, &#39;count(/root/a)&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match tmp == 2</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:50]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:50]</span>
+                <span class="scenario-name">placeholders using xml embedded expressions</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>11</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def phoneNumber = &#39;123456&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.51.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def search = { wireless: true, voip: false, tollFree: false }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req = read(&#39;soap1.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def phone = $req/Envelope/Body/getAccountByPhoneNumber</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match phone /getAccountByPhoneNumber/phoneNumber == &#39;123456&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match phone ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.56">&lt;acc:getAccountByPhoneNumber&gt;
+    &lt;acc:phoneNumber&gt;123456&lt;/acc:phoneNumber&gt;
+    &lt;acc:phoneNumberSearchOption&gt;
+        &lt;acc:searchWirelessInd&gt;true&lt;/acc:searchWirelessInd&gt;
+        &lt;acc:searchVoipInd&gt;false&lt;/acc:searchVoipInd&gt;
+        &lt;acc:searchTollFreeInd&gt;false&lt;/acc:searchTollFreeInd&gt;
+    &lt;/acc:phoneNumberSearchOption&gt;
+&lt;/acc:getAccountByPhoneNumber&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># string comparisons may be simpler than xpath in some cases</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>xmlstring reqString = req</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match reqString contains &#39;&lt;acc:phoneNumber&gt;123456&lt;/acc:phoneNumber&gt;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:71]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:71]</span>
+                <span class="scenario-name">placeholders using string replace</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>10</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req = read(&#39;soap2.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.72.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>replace req</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+  <table>
+    <tr class="tr">      
+      <td class="td">token</td>      
+      <td class="td">value</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">@@number@@</td>      
+      <td class="td">&#39;123456&#39;</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">@@wireless@@</td>      
+      <td class="td">&#39;true&#39;</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">@@voip@@</td>      
+      <td class="td">&#39;false&#39;</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">@@tollFree@@</td>      
+      <td class="td">&#39;false&#39;</td>
+    </tr>     
+  </table> 
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># convert back to xml after a string replace</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>xml req = req</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match req /Envelope/Body/getAccountByPhoneNumber/phoneNumber == &#39;123456&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9:84]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9:84]</span>
+                <span class="scenario-name">set xml chunks using xpath</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>7</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req = read(&#39;envelope1.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.85.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def phone = &#39;123456&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def search =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.87">&lt;acc:getAccountByPhoneNumber&gt;
+    &lt;acc:phoneNumber&gt;#(phone)&lt;/acc:phoneNumber&gt;
+&lt;/acc:getAccountByPhoneNumber&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set req /Envelope/Body = search</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match req ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.94">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:acc=&quot;http://foo/bar&quot;&gt;
+    &lt;soapenv:Header /&gt;
+    &lt;soapenv:Body&gt;
+        &lt;acc:getAccountByPhoneNumber&gt;
+            &lt;acc:phoneNumber&gt;123456&lt;/acc:phoneNumber&gt;
+        &lt;/acc:getAccountByPhoneNumber&gt;
+    &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[10:106]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[10:106]</span>
+                <span class="scenario-name">set xml chunks using embedded expressions</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>6</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def phone = &#39;123456&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.107.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># this will remove the &lt;acc:phoneNumberSearchOption&gt; element</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.109">
+      <div class="step-ref passed">109</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def searchOption = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref passed">110</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def search =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.110">&lt;acc:getAccountByPhoneNumber&gt;
+    &lt;acc:phoneNumber&gt;#(phone)&lt;/acc:phoneNumber&gt;
+    &lt;acc:phoneNumberSearchOption&gt;##(searchOption)&lt;/acc:phoneNumberSearchOption&gt;        
+&lt;/acc:getAccountByPhoneNumber&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.117">
+      <div class="step-ref passed">117</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req = read(&#39;envelope2.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.118">
+      <div class="step-ref passed">118</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match req ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.118">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:acc=&quot;http://foo/bar&quot;&gt;
+    &lt;soapenv:Header/&gt;
+    &lt;soapenv:Body&gt;
+        &lt;acc:getAccountByPhoneNumber&gt;
+            &lt;acc:phoneNumber&gt;123456&lt;/acc:phoneNumber&gt;
+        &lt;/acc:getAccountByPhoneNumber&gt;
+    &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[11:130]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[11:130]</span>
+                <span class="scenario-name">set via table</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>6</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref passed">131</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def search =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.131">&lt;acc:getAccountByPhoneNumber&gt;
+    &lt;acc:phoneNumber&gt;&lt;/acc:phoneNumber&gt;
+    &lt;acc:phoneNumberSearchOption&gt;&lt;/acc:phoneNumberSearchOption&gt;        
+&lt;/acc:getAccountByPhoneNumber&gt;</div>
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.131.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.139">
+      <div class="step-ref passed">139</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set search /getAccountByPhoneNumber</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+  <table>
+    <tr class="tr">      
+      <td class="td">path</td>      
+      <td class="td">value</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">phoneNumber</td>      
+      <td class="td">1234</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">phoneNumberSearchOption</td>      
+      <td class="td">&#39;all&#39;</td>
+    </tr>     
+  </table> 
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.144">
+      <div class="step-ref passed">144</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match search ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.144">&lt;acc:getAccountByPhoneNumber&gt;
+    &lt;acc:phoneNumber&gt;1234&lt;/acc:phoneNumber&gt;
+    &lt;acc:phoneNumberSearchOption&gt;all&lt;/acc:phoneNumberSearchOption&gt;        
+&lt;/acc:getAccountByPhoneNumber&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[12:152]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[12:152]</span>
+                <span class="scenario-name">set via table, variable and xml nodes will be auto-built</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.153">
+      <div class="step-ref passed">153</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set search /acc:getAccountByPhoneNumber</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+  <table>
+    <tr class="tr">      
+      <td class="td">path</td>      
+      <td class="td">value</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">acc:phoneNumber</td>      
+      <td class="td">1234</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">acc:phoneNumberSearchOption</td>      
+      <td class="td">&#39;all&#39;</td>
+    </tr>     
+  </table> 
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.153.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.158">
+      <div class="step-ref passed">158</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match search ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.158">&lt;acc:getAccountByPhoneNumber&gt;
+    &lt;acc:phoneNumber&gt;1234&lt;/acc:phoneNumber&gt;
+    &lt;acc:phoneNumberSearchOption&gt;all&lt;/acc:phoneNumberSearchOption&gt;        
+&lt;/acc:getAccountByPhoneNumber&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[13:166]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[13:166]</span>
+                <span class="scenario-name">set via table, mixing xml chunks</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>7</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.167">
+      <div class="step-ref passed">167</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set search /acc:getAccountByPhoneNumber</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+  <table>
+    <tr class="tr">      
+      <td class="td">path</td>      
+      <td class="td">value</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">acc:phoneNumber</td>      
+      <td class="td">1234</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">acc:foo</td>      
+      <td class="td">&lt;acc:bar&gt;baz&lt;/acc:bar&gt;</td>
+    </tr>     
+  </table> 
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.167.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.172">
+      <div class="step-ref passed">172</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match search ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.172">&lt;acc:getAccountByPhoneNumber&gt;
+    &lt;acc:phoneNumber&gt;1234&lt;/acc:phoneNumber&gt;
+    &lt;acc:foo&gt;
+        &lt;acc:bar&gt;baz&lt;/acc:bar&gt;
+    &lt;/acc:foo&gt;        
+&lt;/acc:getAccountByPhoneNumber&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[14:182]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[14:182]</span>
+                <span class="scenario-name">set via table, build xml including attributes and repeated elements</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>9</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.183">
+      <div class="step-ref passed">183</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set search /acc:getAccountByPhoneNumber</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+  <table>
+    <tr class="tr">      
+      <td class="td">path</td>      
+      <td class="td">value</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">acc:phone/@foo</td>      
+      <td class="td">&#39;bar&#39;</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">acc:phone/acc:number[1]</td>      
+      <td class="td">1234</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">acc:phone/acc:number[2]</td>      
+      <td class="td">5678</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">acc:phoneNumberSearchOption</td>      
+      <td class="td">&#39;all&#39;</td>
+    </tr>     
+  </table> 
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.183.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.190">
+      <div class="step-ref passed">190</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match search ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.190">&lt;acc:getAccountByPhoneNumber&gt;
+    &lt;acc:phone foo=&quot;bar&quot;&gt;
+        &lt;acc:number&gt;1234&lt;/acc:number&gt;
+        &lt;acc:number&gt;5678&lt;/acc:number&gt;
+    &lt;/acc:phone&gt;
+    &lt;acc:phoneNumberSearchOption&gt;all&lt;/acc:phoneNumberSearchOption&gt;        
+&lt;/acc:getAccountByPhoneNumber&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[15.1:217]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[15.1:217]</span>
+                <span class="scenario-name">conditionally build xml from scenario-outline and examples</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.202">
+      <div class="step-ref passed">202</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.202">&lt;query&gt;
+  &lt;name&gt;
+    &lt;firstName&gt;##(&#39;John&#39;)&lt;/firstName&gt;
+    &lt;lastName&gt;##(&#39;Smith&#39;)&lt;/lastName&gt;
+  &lt;/name&gt;
+  &lt;age&gt;##(20)&lt;/age&gt;
+&lt;/query&gt;</div>
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.202.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.213">
+      <div class="step-ref passed">213</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match xml == &lt;query&gt;&lt;name&gt;&lt;firstName&gt;John&lt;/firstName&gt;&lt;lastName&gt;Smith&lt;/lastName&gt;&lt;/name&gt;&lt;age&gt;20&lt;/age&gt;&lt;/query&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[15.2:218]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[15.2:218]</span>
+                <span class="scenario-name">conditionally build xml from scenario-outline and examples</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.202">
+      <div class="step-ref passed">202</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.202">&lt;query&gt;
+  &lt;name&gt;
+    &lt;firstName&gt;##(&#39;Jane&#39;)&lt;/firstName&gt;
+    &lt;lastName&gt;##(&#39;Doe&#39;)&lt;/lastName&gt;
+  &lt;/name&gt;
+  &lt;age&gt;##(null)&lt;/age&gt;
+&lt;/query&gt;</div>
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="2.202.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.213">
+      <div class="step-ref passed">213</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match xml == &lt;query&gt;&lt;name&gt;&lt;firstName&gt;Jane&lt;/firstName&gt;&lt;lastName&gt;Doe&lt;/lastName&gt;&lt;/name&gt;&lt;/query&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[15.3:219]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[15.3:219]</span>
+                <span class="scenario-name">conditionally build xml from scenario-outline and examples</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.202">
+      <div class="step-ref passed">202</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.202">&lt;query&gt;
+  &lt;name&gt;
+    &lt;firstName&gt;##(null)&lt;/firstName&gt;
+    &lt;lastName&gt;##(&#39;Waldo&#39;)&lt;/lastName&gt;
+  &lt;/name&gt;
+  &lt;age&gt;##(null)&lt;/age&gt;
+&lt;/query&gt;</div>
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="3.202.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.213">
+      <div class="step-ref passed">213</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match xml == &lt;query&gt;&lt;name&gt;&lt;lastName&gt;Waldo&lt;/lastName&gt;&lt;/name&gt;&lt;/query&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[16:222]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[16:222]</span>
+                <span class="scenario-name">a cleaner way to achieve the above by using tables and the &#39;set&#39; keyword</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>29</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.223">
+      <div class="step-ref passed">223</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set search /queries/query</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+  <table>
+    <tr class="tr">      
+      <td class="td">path</td>      
+      <td class="td">1</td>      
+      <td class="td">2</td>      
+      <td class="td">3</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">name/firstName</td>      
+      <td class="td">&#39;John&#39;</td>      
+      <td class="td">&#39;Jane&#39;</td>      
+      <td class="td"></td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">name/lastName</td>      
+      <td class="td">&#39;Smith&#39;</td>      
+      <td class="td">&#39;Doe&#39;</td>      
+      <td class="td">&#39;Waldo&#39;</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">age</td>      
+      <td class="td">20</td>      
+      <td class="td"></td>      
+      <td class="td"></td>
+    </tr>     
+  </table> 
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.223.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.229">
+      <div class="step-ref passed">229</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match search/queries/query[1] == &lt;query&gt;&lt;name&gt;&lt;firstName&gt;John&lt;/firstName&gt;&lt;lastName&gt;Smith&lt;/lastName&gt;&lt;/name&gt;&lt;age&gt;20&lt;/age&gt;&lt;/query&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.230">
+      <div class="step-ref passed">230</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match search/queries/query[2] == &lt;query&gt;&lt;name&gt;&lt;firstName&gt;Jane&lt;/firstName&gt;&lt;lastName&gt;Doe&lt;/lastName&gt;&lt;/name&gt;&lt;/query&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.231">
+      <div class="step-ref passed">231</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match search/queries/query[3] == &lt;query&gt;&lt;name&gt;&lt;lastName&gt;Waldo&lt;/lastName&gt;&lt;/name&gt;&lt;/query&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[17:233]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[17:233]</span>
+                <span class="scenario-name">karate.set() is another way to conditionally modify xml</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>78</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.234">
+      <div class="step-ref passed">234</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>table data</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+  <table>
+    <tr class="tr">      
+      <td class="td">first</td>      
+      <td class="td">last</td>      
+      <td class="td">age</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">&#39;John&#39;</td>      
+      <td class="td">&#39;Smith&#39;</td>      
+      <td class="td">20</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">&#39;Jane&#39;</td>      
+      <td class="td">&#39;Doe&#39;</td>      
+      <td class="td"></td>
+    </tr>
+    <tr class="tr">      
+      <td class="td"></td>      
+      <td class="td">&#39;Waldo&#39;</td>      
+      <td class="td"></td>
+    </tr>     
+  </table> 
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.234.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.239">
+      <div class="step-ref passed">239</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def fun =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.239">function(v) {
+  karate.setXml(&#39;temp&#39;, &#39;&lt;query/&gt;&#39;);
+  if (v.first) karate.set(&#39;temp&#39;, &#39;/query/name/firstName&#39;, v.first);
+  if (v.last) karate.set(&#39;temp&#39;, &#39;/query/name/lastName&#39;, v.last);
+  if (v.age) karate.set(&#39;temp&#39;, &#39;/query/age&#39;, v.age);
+  return karate.get(&#39;temp&#39;);
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.249">
+      <div class="step-ref passed">249</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call fun data[0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.250">
+      <div class="step-ref passed">250</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match temp == &lt;query&gt;&lt;name&gt;&lt;firstName&gt;John&lt;/firstName&gt;&lt;lastName&gt;Smith&lt;/lastName&gt;&lt;/name&gt;&lt;age&gt;20&lt;/age&gt;&lt;/query&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.251">
+      <div class="step-ref passed">251</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call fun data[1]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">44</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.252">
+      <div class="step-ref passed">252</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match temp == &lt;query&gt;&lt;name&gt;&lt;firstName&gt;Jane&lt;/firstName&gt;&lt;lastName&gt;Doe&lt;/lastName&gt;&lt;/name&gt;&lt;/query&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.253">
+      <div class="step-ref passed">253</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call fun data[2]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.254">
+      <div class="step-ref passed">254</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match temp == &lt;query&gt;&lt;name&gt;&lt;lastName&gt;Waldo&lt;/lastName&gt;&lt;/name&gt;&lt;/query&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[18:256]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[18:256]</span>
+                <span class="scenario-name">creating xml with repeating elements in a loop</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>65</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.257">
+      <div class="step-ref passed">257</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>table users</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+  <table>
+    <tr class="tr">      
+      <td class="td">accountNo</td>      
+      <td class="td">subsID</td>      
+      <td class="td">mobile</td>      
+      <td class="td">subsType</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">&#39;113888572&#39;</td>      
+      <td class="td">&#39;113985218890&#39;</td>      
+      <td class="td">&#39;1135288836&#39;</td>      
+      <td class="td">&#39;asd&#39;</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">&#39;113888573&#39;</td>      
+      <td class="td">&#39;113985218891&#39;</td>      
+      <td class="td">&#39;1135288837&#39;</td>      
+      <td class="td">&#39;qwe&#39;</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">&#39;113888582&#39;</td>      
+      <td class="td">&#39;113985218810&#39;</td>      
+      <td class="td">&#39;1135288846&#39;</td>      
+      <td class="td">&#39;asd&#39;</td>
+    </tr>     
+  </table> 
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.257.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.263">
+      <div class="step-ref passed">263</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml = &lt;users&gt;&lt;/users&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.264">
+      <div class="step-ref passed">264</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def fun =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.264">function(u, i) {
+  var base = &#39;/users/user[&#39; + (i + 1) + &#39;]/&#39;;
+  karate.set(&#39;xml&#39;, base + &#39;account&#39;, u.accountNo);
+  karate.set(&#39;xml&#39;, base + &#39;mobile&#39;, u.mobile);
+  karate.set(&#39;xml&#39;, base + &#39;type&#39;, u.subsType);
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.273">
+      <div class="step-ref passed">273</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.forEach(users, fun)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">60</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.274">
+      <div class="step-ref passed">274</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match xml ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.274">&lt;users&gt;
+  &lt;user&gt;
+    &lt;account&gt;113888572&lt;/account&gt;
+    &lt;mobile&gt;1135288836&lt;/mobile&gt;
+    &lt;type&gt;asd&lt;/type&gt;
+  &lt;/user&gt;
+  &lt;user&gt;
+    &lt;account&gt;113888573&lt;/account&gt;
+    &lt;mobile&gt;1135288837&lt;/mobile&gt;
+    &lt;type&gt;qwe&lt;/type&gt;
+  &lt;/user&gt;
+  &lt;user&gt;
+    &lt;account&gt;113888582&lt;/account&gt;
+    &lt;mobile&gt;1135288846&lt;/mobile&gt;
+    &lt;type&gt;asd&lt;/type&gt;
+  &lt;/user&gt;
+&lt;/users&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[19:295]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[19:295]</span>
+                <span class="scenario-name">xml containing DTD reference</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>9</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.296">
+      <div class="step-ref passed">296</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml = &lt;!DOCTYPE USER SYSTEM &quot;http://127.0.0.1:5000/login/dtd&quot;&gt;&lt;foo/&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.296.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.297">
+      <div class="step-ref passed">297</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match xml == &lt;foo&gt;&lt;/foo&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[20:299]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[20:299]</span>
+                <span class="scenario-name">xml containing DTD complex</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>11</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.300">
+      <div class="step-ref passed">300</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.300">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE USER SYSTEM &quot;http://172.20.17.74:5000/login/dtd&quot;&gt;
+&lt;gpOBJECT&gt;
+  &lt;gpPARAM name=&quot;coconuts&quot;&gt;666&lt;/gpPARAM&gt;
+&lt;/gpOBJECT&gt;</div>
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.300.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.308">
+      <div class="step-ref passed">308</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match xml == &lt;gpOBJECT&gt;&lt;gpPARAM name=&quot;coconuts&quot;&gt;666&lt;/gpPARAM&gt;&lt;/gpOBJECT&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[21:310]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[21:310]</span>
+                <span class="scenario-name">xml containing a CDATA section</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>6</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.311">
+      <div class="step-ref passed">311</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.311">&lt;ResponseSet vers=&quot;1.0&quot; svcid=&quot;com.iplanet.am.naming&quot; reqid=&quot;0&quot;&gt;
+    &lt;Response&gt;&lt;![CDATA[&lt;NamingResponse vers=&quot;1.0&quot; reqid=&quot;0&quot;&gt;
+            &lt;GetNamingProfile&gt;
+                &lt;Attribute name=&quot;url&quot; value=&quot;localhost&quot;&gt;&lt;/Attribute&gt;
+             &lt;/GetNamingProfile&gt;
+        &lt;/NamingResponse&gt;]]&gt;
+    &lt;/Response&gt;
+&lt;/ResponseSet&gt;</div>
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.311.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.322">
+      <div class="step-ref passed">322</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>xml naming = $xml /ResponseSet/Response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.323">
+      <div class="step-ref passed">323</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match naming //Attribute[@name=&#39;url&#39;]/@value == &#39;localhost&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[22:325]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[22:325]</span>
+                <span class="scenario-name">CDATA and simple string embedded expression</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.326">
+      <div class="step-ref passed">326</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def foo = &#39;hello world&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.326.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.327">
+      <div class="step-ref passed">327</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml = &lt;bar&gt;&lt;![CDATA[#(foo)]]&gt;&lt;/bar&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.328">
+      <div class="step-ref passed">328</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match xml == &lt;bar&gt;&lt;![CDATA[hello world]]&gt;&lt;/bar&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[23:330]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[23:330]</span>
+                <span class="scenario-name">CDATA and xml embedded expression</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.331">
+      <div class="step-ref passed">331</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def foo = &lt;bar&gt;baz&lt;/bar&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.331.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.332">
+      <div class="step-ref passed">332</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.332">&lt;ResponseSet vers=&quot;1.0&quot; svcid=&quot;com.iplanet.am.naming&quot; reqid=&quot;0&quot;&gt;
+    &lt;Response&gt;&lt;![CDATA[#(foo)]]&gt;&lt;/Response&gt;
+&lt;/ResponseSet&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.338">
+      <div class="step-ref passed">338</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match xml ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.338">&lt;ResponseSet vers=&quot;1.0&quot; svcid=&quot;com.iplanet.am.naming&quot; reqid=&quot;0&quot;&gt;
+    &lt;Response&gt;&lt;![CDATA[&lt;bar&gt;baz&lt;/bar&gt;]]&gt;&lt;/Response&gt;
+&lt;/ResponseSet&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[24:345]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[24:345]</span>
+                <span class="scenario-name">CDATA and xml string embedded expression</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.346">
+      <div class="step-ref passed">346</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def foo = &lt;bar&gt;baz&lt;/bar&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.346.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.347">
+      <div class="step-ref passed">347</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>xmlstring foo = foo</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.348">
+      <div class="step-ref passed">348</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml = &lt;ResponseSet vers=&quot;1.0&quot; svcid=&quot;com.iplanet.am.naming&quot; reqid=&quot;0&quot;&gt;&lt;Response&gt;&lt;![CDATA[#(foo)]]&gt;&lt;/Response&gt;&lt;/ResponseSet&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.349">
+      <div class="step-ref passed">349</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>xmlstring xml = xml</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># note that attributes get re-ordered / sorted by name</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.351">
+      <div class="step-ref passed">351</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match xml == &#39;&lt;ResponseSet reqid=&quot;0&quot; svcid=&quot;com.iplanet.am.naming&quot; vers=&quot;1.0&quot;&gt;&lt;Response&gt;&lt;![CDATA[&lt;bar&gt;baz&lt;/bar&gt;]]&gt;&lt;/Response&gt;&lt;/ResponseSet&gt;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[25:353]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[25:353]</span>
+                <span class="scenario-name">two CDATA sections is tricky - but xpath returns a list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.354">
+      <div class="step-ref passed">354</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def response =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.354">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;ResponseSet vers=&quot;1.0&quot; svcid=&quot;Session&quot; reqid=&quot;1&quot;&gt;
+    &lt;Response&gt;&lt;![CDATA[&lt;SessionResponse vers=&quot;1.0&quot; reqid=&quot;0&quot;&gt;
+            &lt;GetSession&gt;
+                &lt;Session sid=&quot;1&quot;&gt;
+                    &lt;Property name=&quot;CharSet&quot; value=&quot;UTF-8&quot;&gt;&lt;/Property&gt;      
+                &lt;/Session&gt;
+            &lt;/GetSession&gt;
+        &lt;/SessionResponse&gt;]]&gt;
+    &lt;/Response&gt;
+    &lt;Response&gt;&lt;![CDATA[&lt;SessionResponse vers=&quot;1.0&quot; reqid=&quot;1&quot;&gt;
+      &lt;AddSessionListener&gt;
+        &lt;OK&gt;&lt;/OK&gt;
+      &lt;/AddSessionListener&gt;
+      &lt;/SessionResponse&gt;]]&gt;
+    &lt;/Response&gt;
+&lt;/ResponseSet&gt;</div>
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.354.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.374">
+      <div class="step-ref passed">374</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def temp = $response //Response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.375">
+      <div class="step-ref passed">375</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>xml session = temp[0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.376">
+      <div class="step-ref passed">376</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match session == &lt;SessionResponse reqid=&quot;0&quot; vers=&quot;1.0&quot;&gt;&lt;GetSession&gt;&lt;Session sid=&quot;1&quot;&gt;&lt;Property name=&quot;CharSet&quot; value=&quot;UTF-8&quot;/&gt;&lt;/Session&gt;&lt;/GetSession&gt;&lt;/SessionResponse&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[26:378]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[26:378]</span>
+                <span class="scenario-name">xml with attributes but null value</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>9</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.379">
+      <div class="step-ref passed">379</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml = &lt;foo&gt;&lt;bar bbb=&quot;2&quot; aaa=&quot;1&quot;/&gt;&lt;/foo&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.379.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.380">
+      <div class="step-ref passed">380</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match xml == &lt;foo&gt;&lt;bar bbb=&quot;2&quot; aaa=&quot;1&quot;/&gt;&lt;/foo&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.381">
+      <div class="step-ref passed">381</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>xmlstring temp = xml</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># unfortunately xml attributes get re-ordered on string conversion / http request</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.383">
+      <div class="step-ref passed">383</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match temp == &#39;&lt;foo&gt;&lt;bar aaa=&quot;1&quot; bbb=&quot;2&quot;/&gt;&lt;/foo&gt;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.384">
+      <div class="step-ref passed">384</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def temp = karate.prettyXml(xml)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.385">
+      <div class="step-ref passed">385</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match temp contains &#39;&lt;bar aaa=&quot;1&quot; bbb=&quot;2&quot;/&gt;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[27:387]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[27:387]</span>
+                <span class="scenario-name">attribute embedded expression but empty / null element text</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.388">
+      <div class="step-ref passed">388</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def request_uuid = &#39;foo&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.388.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.389">
+      <div class="step-ref passed">389</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def response =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.389">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;S:Envelope xmlns:S=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
+    &lt;S:Body&gt;
+        &lt;SucceededGetData RequestID=&quot;#(request_uuid)&quot;&gt;some text&lt;/SucceededGetData&gt;
+        &lt;MessageDelivered OfferID=&quot;#(request_uuid)&quot;/&gt;
+    &lt;/S:Body&gt;
+&lt;/S:Envelope&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.399">
+      <div class="step-ref passed">399</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.399">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;S:Envelope xmlns:S=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
+    &lt;S:Body&gt;
+        &lt;SucceededGetData RequestID=&quot;foo&quot;&gt;some text&lt;/SucceededGetData&gt;
+        &lt;MessageDelivered OfferID=&quot;foo&quot;/&gt;
+    &lt;/S:Body&gt;
+&lt;/S:Envelope&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[28:410]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[28:410]</span>
+                <span class="scenario-name">attribute embedded expression but empty / null element text</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>6</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.411">
+      <div class="step-ref passed">411</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def request_uuid = &#39;foo&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.411.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.412">
+      <div class="step-ref passed">412</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def response =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.412">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;S:Envelope xmlns:S=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
+    &lt;S:Body&gt;
+        &lt;SucceededGetData RequestID=&quot;#(request_uuid)&quot;&gt;some text&lt;/SucceededGetData&gt;
+        &lt;MessageDelivered OfferID=&quot;#(request_uuid)&quot;/&gt;
+        &lt;Test OfferID=&quot;&quot;/&gt;
+    &lt;/S:Body&gt;
+&lt;/S:Envelope&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.423">
+      <div class="step-ref passed">423</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set response /Envelope/Body/Test/@OfferID = &#39;bar&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.424">
+      <div class="step-ref passed">424</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.424">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;S:Envelope xmlns:S=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
+    &lt;S:Body&gt;
+        &lt;SucceededGetData RequestID=&quot;foo&quot;&gt;some text&lt;/SucceededGetData&gt;
+        &lt;MessageDelivered OfferID=&quot;foo&quot;/&gt;
+        &lt;Test OfferID=&quot;bar&quot;/&gt;
+    &lt;/S:Body&gt;
+&lt;/S:Envelope&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[29:436]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[29:436]</span>
+                <span class="scenario-name">repeated xml elements and fuzzy matching</span>
+                <span>since this is tricky, convert to json first</span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.439">
+      <div class="step-ref passed">439</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json response = &lt;response&gt;&lt;foo&gt;&lt;bar&gt;&lt;msg name=&quot;Hello&quot;/&gt;&lt;msg name=&quot;World&quot;/&gt;&lt;/bar&gt;&lt;bar&gt;&lt;msg name=&quot;Hello&quot;/&gt;&lt;msg name=&quot;World&quot;/&gt;&lt;/bar&gt;&lt;/foo&gt;&lt;/response&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.439.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.440">
+      <div class="step-ref passed">440</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json bar = &lt;bar&gt;&lt;msg name=&quot;Hello&quot;/&gt;&lt;msg name=&quot;World&quot;/&gt;&lt;/bar&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.441">
+      <div class="step-ref passed">441</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match each response.response.foo.bar == bar.bar</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.442">
+      <div class="step-ref passed">442</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == { response: { foo: { bar: &#39;#[] bar.bar&#39; } } }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># so yes, we can express expected data in xml</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.444">
+      <div class="step-ref passed">444</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response == &lt;response&gt;&lt;foo&gt;&lt;bar&gt;#[] bar.bar&lt;/bar&gt;&lt;/foo&gt;&lt;/response&gt;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[30:446]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[30:446]</span>
+                <span class="scenario-name">matching ignores xml prefixes</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>14</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.447">
+      <div class="step-ref passed">447</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def search = { number: &#39;123456&#39;, wireless: true, voip: false, tollFree: false }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.447.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.448">
+      <div class="step-ref passed">448</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def xml = read(&#39;soap1.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.450">
+      <div class="step-ref passed">450</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def phoneNumberSearchOption =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.450">&lt;foo:phoneNumberSearchOption xmlns:foo=&quot;http://foo/bar&quot;&gt;
+    &lt;foo:searchWirelessInd&gt;#(search.wireless)&lt;/foo:searchWirelessInd&gt;
+    &lt;foo:searchVoipInd&gt;#(search.voip)&lt;/foo:searchVoipInd&gt;
+    &lt;foo:searchTollFreeInd&gt;#(search.tollFree)&lt;/foo:searchTollFreeInd&gt;
+&lt;/foo:phoneNumberSearchOption&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.458">
+      <div class="step-ref passed">458</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match xml /Envelope/Body/getAccountByPhoneNumber/phoneNumberSearchOption == phoneNumberSearchOption</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[31:460]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[31:460]</span>
+                <span class="scenario-name">xml to map conversion should ignore comments</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.461">
+      <div class="step-ref passed">461</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def temp =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.461">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!-- Copyright 2001-2019 3rd party which has been removed. All rights reserved. --&gt;
+&lt;!-- PRODUCTION HEADER
+     produced on:        machine of third party
+     production time:    20190912T162512,4Z
+     production module:  3rd party module
+--&gt;
+&lt;hello&gt;world&lt;/hello&gt;</div>
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.461.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.473">
+      <div class="step-ref passed">473</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def message = karate.xmlPath(temp, &quot;/hello&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.474">
+      <div class="step-ref passed">474</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match message == &quot;world&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[32:476]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[32:476]</span>
+                <span class="scenario-name">xml matching involving karate-schema substitutions</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.477">
+      <div class="step-ref passed">477</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def subSchema =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.477">&lt;c&gt;#string&lt;/c&gt;</div>
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.477.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">utils</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+    <div>
+      
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.481">
+      <div class="step-ref passed">481</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>text schema =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.481">&lt;root&gt;
+  &lt;a&gt;#string&lt;/a&gt;
+  &lt;b&gt;##(subSchema)&lt;/b&gt;
+&lt;/root&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># this is to avoid auto-substitution of the &quot;##(subSchema)&quot; part</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># since we need to &quot;preserve&quot; it for later use in a &quot;match&quot;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.490">
+      <div class="step-ref passed">490</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>xml schema = schema</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.491">
+      <div class="step-ref passed">491</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def test1 =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.491">&lt;root&gt;
+  &lt;a&gt;x&lt;/a&gt;
+  &lt;b&gt;
+    &lt;c&gt;y&lt;/c&gt;
+  &lt;/b&gt;
+&lt;/root&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.500">
+      <div class="step-ref passed">500</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match test1 == schema</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.501">
+      <div class="step-ref passed">501</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def test2 =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.501">&lt;root&gt;
+  &lt;a&gt;x&lt;/a&gt;
+&lt;/root&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.507">
+      <div class="step-ref passed">507</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match test2 == schema</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

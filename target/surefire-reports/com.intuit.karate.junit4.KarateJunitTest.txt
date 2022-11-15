@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.intuit.karate.junit4.KarateJunitTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 43.513 s <<< FAILURE! - in com.intuit.karate.junit4.KarateJunitTest
+testAll(com.intuit.karate.junit4.KarateJunitTest)  Time elapsed: 43.297 s  <<< FAILURE!
+java.lang.AssertionError: 
+http call failed after 42463 milliseconds for url: https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature:23 expected:<0> but was:<1>
+	at com.intuit.karate.junit4.KarateJunitTest.testAll(KarateJunitTest.java:21)
+

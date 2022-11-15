@@ -1,0 +1,1939 @@
+19:02:53.628 [main] WARN  com.intuit.karate.Runner - the @KarateOptions annotation is deprecated, please use Runner.builder()
+19:02:54.058 [main] WARN  com.intuit.karate.Runner - the @KarateOptions annotation is deprecated, please use Runner.builder()
+19:02:54.060 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:02:54.062 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:02:54.924 [main] INFO  com.intuit.karate - [print] A 
+19:02:54.926 [main] INFO  com.intuit.karate - [print] {
+  "vitality": 2
+}
+ 
+19:02:54.943 [main] INFO  com.intuit.karate - [print] B 
+19:02:54.944 [main] INFO  com.intuit.karate - [print] {
+  "strength": 3
+}
+ 
+19:02:54.961 [main] INFO  com.intuit.karate - [print] C 
+19:02:54.964 [main] INFO  com.intuit.karate - [print] {
+  "intelligence": 5
+}
+ 
+19:02:54.987 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'nodes' with new value: get xml //hello
+19:04:29.176 [main] WARN  com.intuit.karate.Runner - the @KarateOptions annotation is deprecated, please use Runner.builder()
+19:04:29.575 [main] WARN  com.intuit.karate.Runner - the @KarateOptions annotation is deprecated, please use Runner.builder()
+19:04:29.578 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:04:29.580 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:04:30.400 [main] INFO  com.intuit.karate - [print] #################################### 
+19:04:30.402 [main] INFO  com.intuit.karate - [print] 836243230 
+19:04:30.804 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+1 > Authorization: Basic MDcyMDY4MTYwMDc2MzI6dGVzdGUxMjM=
+1 > SOAPAction: 
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Content-Length: 8604
+1 > Host: api-rtf-dh.mdb.com.br
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:boor="http://www.accurate.com/acec/AcecBOSOAIntegration/BOOrderIntegration">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <boor:integrateOrderRequest>
+         <order xmlns="http://www.accurate.com/acec/order" xmlns:ns2="http://www.accurate.com/acec/InvoiceInfo">
+            <orderId>836243230</orderId>
+            <totalAmount>312.81</totalAmount>
+            <totalDiscountAmount>0.00</totalDiscountAmount>
+            <purchaseDate>2022-10-27T13:30:54-03:00</purchaseDate>
+            <sessionCreationDate>2022-10-27T13:30:54-03:00</sessionCreationDate>
+            <applicationVersion>1</applicationVersion>
+            <saleChannel>MDB</saleChannel>
+                                    <deliveries>
+               <delivery>
+                  <deliveryId>1</deliveryId>
+                  <orderId>836243230</orderId>
+                  <totalAmount>312.81</totalAmount>
+                  <totalDiscountAmount>0.00</totalDiscountAmount>
+                  <orderLineList>
+                                       <orderLine>
+                        <sku>7896085086229C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Light Adria 142g - Caixa com 32 unida</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                       <orderLine>
+                        <sku>7896085086205C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Tradicional Adria 142g - Caixa com 32</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                       <orderLine>
+                        <sku>7896085086212C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Integral Adria 142g - Caixa com 32 un</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                    </orderLineList>
+                  <freightAmount>
+                     <chargedAmount>0.00</chargedAmount>
+                     <actualAmount>0.00</actualAmount>
+                     <commercialAmount>0.00</commercialAmount>
+                     <freightTime>3</freightTime>
+                     <pickupLeadTime>0</pickupLeadTime>
+                     <logisticContract>NORMAL</logisticContract>
+                  </freightAmount>
+                  <wareHouseCNPJ>0</wareHouseCNPJ>
+                  <deliveryAddress>
+                     <addressId>53920</addressId>
+                     <recipientNm>J.M PEREIRA JUNIOR CIA LTDA</recipientNm>
+                     <address>RUA JACATIRAO</address>
+                     <addressNr>350</addressNr>
+                     <quarter>CAROLINA</quarter>
+                     <city>DUQUE DE CAXIAS</city>
+                     <state>RJ</state>
+                     <countryId>BR</countryId>
+                     <postalCd>25060140</postalCd>
+                     <postalCdIntl>25060140</postalCdIntl>
+                     <friendlyNm>J.M PEREIRA JUNIOR CIA LTDA</friendlyNm>
+                     <lift>false</lift>
+                     <intercom>false</intercom>
+                  </deliveryAddress>
+               </delivery>
+            </deliveries>
+            <customer>
+               <customerId>29331550000175</customerId>
+                              <documentNumber>29331550000175</documentNumber>
+               <name>J.M PEREIRA JUNIOR CIA LTDA</name>
+               <email>glicose70@gmail.com</email>
+               <phoneMobile>21971632449</phoneMobile>
+               <phoneOffice>21971632449</phoneOffice>
+               <state_subscription>80212526</state_subscription>
+               <representativeNm>J.M PEREIRA JUNIOR CIA LTDA</representativeNm>
+               <createDt>2022-09-14T12:10:39-03:00</createDt>
+               <updateDt>2022-09-14T12:10:39-03:00</updateDt>
+            </customer>
+            <billingAddress>
+               <addressId>53920</addressId>
+               <recipientNm>J.M PEREIRA JUNIOR CIA LTDA</recipientNm>
+               <address>RUA JACATIRAO</address>
+               <addressNr>350</addressNr>
+               <quarter>CAROLINA</quarter>
+               <city>DUQUE DE CAXIAS</city>
+               <state>RJ</state>
+               <countryId>BR</countryId>
+               <postalCd>25060140</postalCd>
+               <postalCdIntl>25060140</postalCdIntl>
+               <friendlyNm>J.M PEREIRA JUNIOR CIA LTDA</friendlyNm>
+               <lift>false</lift>
+               <intercom>false</intercom>
+            </billingAddress>
+            <paymentList>
+                              <payment>
+                                    <abstractPayment>
+                     <paymentType>CRL-28</paymentType>
+                     <value>312.81</value>
+                     <billType>SELLER</billType>
+                  </abstractPayment>
+                                 </payment>
+                           </paymentList>
+            <freightChargedAmount>0.00</freightChargedAmount>
+            <freightActualAmount>0.00</freightActualAmount>
+             <countDistinctSku>3</countDistinctSku>
+         </order>
+      </boor:integrateOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+19:05:12.964 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to api-rtf-dh.mdb.com.br:443 [api-rtf-dh.mdb.com.br/187.28.89.60, api-rtf-dh.mdb.com.br/177.184.136.60] failed: Connection timed out: connect, http call failed after 42446 milliseconds for url: https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+19:05:12.965 [main] ERROR com.intuit.karate - classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature:23
+When soap action ''
+http call failed after 42446 milliseconds for url: https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature:23
+19:05:32.593 [main] INFO  com.intuit.karate.Runner - karate.env is: 'confenvdir'
+19:05:32.948 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:05:32.950 [main] DEBUG com.intuit.karate.Suite - [config] src/test/resources/conf/karate-config-confenvdir.js
+19:05:32.951 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668549932951
+19:05:34.122 [main] INFO  com.intuit.karate.Runner - karate.env is: 'custom'
+19:05:34.126 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:05:34.126 [main] DEBUG com.intuit.karate.Suite - [config] src/test/java/com/intuit/karate/junit4/config/karate-config.js
+19:05:34.126 [main] DEBUG com.intuit.karate.Suite - [config] src/test/java/com/intuit/karate/junit4/config/karate-config-custom.js
+19:05:34.127 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668549934127
+19:05:34.190 [main] INFO  com.intuit.karate.Runner - karate.env is: 'confenv'
+19:05:34.193 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:05:34.193 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:05:34.194 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config-confenv.js
+19:05:34.194 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668549934194
+19:05:34.560 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:05:34.562 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:05:34.562 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668549934562
+19:05:34.564 [main] DEBUG com.intuit.karate.Suite - waiting for 35 features to complete
+19:05:34.754 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'fun' with new value: function(){ return karate.get('$foo.bar[*].baz') }
+19:05:34.756 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'res' with new value: call fun
+19:05:34.867 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: karate.jsonPath(cat, "$.kittens[?(@.name=='" + bob.name + "')]")[0]
+19:05:34.872 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: { id: '#(foo)', value: '#(bar.hello)' }
+19:05:34.885 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'list' with new value: [ 1, 2, 3]
+19:05:34.886 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'data' with new value: karate.mapWithKey(list, 'val')
+19:05:34.888 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'list' with new value: [{ a: 1 }, { b: 2 }]
+19:05:34.888 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'user' with new value: { name: 'john', age: 21 }
+19:05:34.889 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'data' with new value: karate.mapWithKey(list, 'foo')
+19:05:34.889 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'lang' with new value: 'en'
+19:05:34.890 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'user' with new value: <user><name>john</name></user>
+19:05:34.890 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'list' with new value: null
+19:05:34.891 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'data' with new value: karate.mapWithKey(list, 'foo')
+19:05:34.892 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'lang' with new value: 'en'
+19:05:34.896 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'session' with new value: <session><locale>#(lang)</locale><sessionUser>#(user)</sessionUser></session>
+19:05:34.903 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'kitnums' with new value: $cat.kittens[*].id
+19:05:34.925 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: 1 }
+19:05:34.926 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'bar' with new value: karate.append(foo, { b: 2})
+19:05:34.964 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "createDateTime": "2022-11-15T19:05:34.931204600",
+  "expiryDate": "2022-11-15T19:10:34.954418700"
+}
+ 
+19:05:34.967 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: { b: 'ab' }
+19:05:34.971 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: get response $[?(@.b=='ab')]
+19:05:34.983 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: { foo: 'bar' }
+19:05:34.983 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: (zone == 'zone1' ? { foo: '#string' } : { bar: '#number' })
+19:05:34.984 [pool-1-thread-2] INFO  com.intuit.karate - [print] [
+  {
+    "foo": "hello",
+    "bar": {
+      "baz": 1
+    }
+  },
+  {
+    "foo": "world",
+    "bar": [
+      "baz",
+      "ban"
+    ]
+  },
+  {
+    "foo": true,
+    "bar": true
+  }
+]
+ 
+19:05:34.985 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: 'before'
+19:05:35.028 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: null }
+19:05:35.029 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: 1 }
+19:05:35.056 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { }
+19:05:35.058 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: null }
+19:05:35.059 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: 1 }
+19:05:35.061 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: [{ entityId: 'foo'}, { entityId: 'bar'}]
+19:05:35.061 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: $expected[?(@.entityId=='foo')]
+19:05:35.063 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: karate.jsonPath(expected, "$[?(@.entityId=='foo')]")
+19:05:35.086 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { message: 'HELLO' }
+19:05:35.092 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: name,type
+Billie,LOL
+Bob,Wild
+19:05:35.092 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'bar' with new value: foo
+19:05:35.100 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expression' with new value: 'temperature.celsius * 1.8 + 32'
+19:05:35.251 [pool-1-thread-3] INFO  com.intuit.karate - [print] os: {
+  "name": "Windows 10",
+  "type": "windows"
+}
+ 
+19:05:35.256 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'res' with new value: karate.match(foo, { hello: '#number' } )
+19:05:35.261 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'res' with new value: karate.match("foo == { a: '#number' }")
+19:05:35.262 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: [1, 2, 3]
+19:05:35.262 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'res' with new value: karate.match("each foo == '#number'")
+19:05:35.290 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'bar' with new value: karate.appendTo(foo, [5, 6])
+19:05:35.297 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: karate.lowerCase(json)
+19:05:35.306 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'xml' with new value: karate.lowerCase(xml)
+19:05:35.324 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: 'bar'
+19:05:35.324 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'test' with new value: 'foo'
+19:05:35.330 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'test' with new value: [1, 2]
+19:05:35.335 [pool-1-thread-5] INFO  com.intuit.karate - [print] a:  2 
+19:05:35.336 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'fun' with new value: function(i){ return { foo: [1, 2]} }
+19:05:35.343 [pool-1-thread-2] INFO  com.intuit.karate - [print] a:  3 
+19:05:35.349 [pool-1-thread-3] INFO  com.intuit.karate - [print] a:  1 
+19:05:35.424 [pool-1-thread-2] INFO  com.intuit.karate - [print] row:  {
+  "name": "Nyan",
+  "age": 7
+}
+ 
+19:05:35.429 [pool-1-thread-1] INFO  com.intuit.karate - [print] row:  {
+  "name": "Bob",
+  "age": 5
+}
+ 
+19:05:35.459 [pool-1-thread-5] INFO  com.intuit.karate - [print] selected index: 1 
+19:05:35.517 [pool-1-thread-5] INFO  com.intuit.karate - >> lock acquired, begin callonce: fun
+19:05:35.532 [pool-1-thread-5] INFO  com.intuit.karate - << lock released, cached callonce: fun
+19:05:35.533 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'a' with new value: 2
+19:05:35.543 [pool-1-thread-5] INFO  com.intuit.karate - [print] pretty print:
+{
+  "foo": "bar",
+  "baz": [
+    1,
+    2,
+    3
+  ]
+}
+ 
+19:05:35.549 [pool-1-thread-1] INFO  com.intuit.karate - [print] pretty print:
+{
+  "id": "390",
+  "count": 4,
+  "odd": {
+    "price": "1.20",
+    "status": 2,
+    "ck": 12.2,
+    "name": "2"
+  },
+  "data": {
+    "countryId": 35,
+    "countryName": "Norway",
+    "status": 0,
+    "sportName": "Soccer",
+    "time": "2016-06-12T12:00:00Z"
+  },
+  "odds": [
+    {
+      "price": "1.30",
+      "status": 0,
+      "ck": 12.2,
+      "name": "1"
+    },
+    {
+      "price": "5.25",
+      "status": 1,
+      "name": "X"
+    },
+    {
+      "price": "2.70",
+      "status": 0,
+      "ck": 12.2,
+      "name": "0"
+    },
+    {
+      "price": "1.20",
+      "status": 2,
+      "name": "2"
+    }
+  ]
+}
+ 
+19:05:35.594 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 35 (34 remaining) classpath:com/intuit/karate/junit4/demos/examples.feature
+19:05:35.737 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: karate.fromString('<foo>bar</foo>')
+19:05:35.740 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: karate.fromString('random text')
+19:05:35.743 [pool-1-thread-5] WARN  com.intuit.karate - auto evaluation failed: js failed:
+>>>>
+01: random text
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:7 Expected ; but found text
+random text
+       ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioBridge.fromString(ScenarioBridge.java:471)
+
+19:05:35.761 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: ['foo', 'bar']
+19:05:35.768 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'data' with new value: data
+19:05:35.775 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(parseInt(foo))' }
+19:05:35.782 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'big' with new value: new java.math.BigDecimal(123123123123)
+19:05:35.791 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { num: '#(big)' }
+19:05:35.801 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: 10
+19:05:35.802 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(foo)' }
+19:05:35.803 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: '10'
+19:05:35.803 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(~~foo)' }
+19:05:35.816 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: 100
+19:05:35.819 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(foo * 0.1)' }
+19:05:35.820 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(~~(foo * 0.1))' }
+19:05:35.831 [pool-1-thread-3] INFO  com.intuit.karate - [print] in caller 
+19:05:35.835 [pool-1-thread-3] INFO  com.intuit.karate - [print] in common with arg: null 
+19:05:35.846 [pool-1-thread-3] INFO  com.intuit.karate - [print] in called1 
+19:05:35.850 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'teacher' with new value: get response //teacher[@department='science']
+19:05:35.852 [pool-1-thread-3] INFO  com.intuit.karate - [print] in called2 
+19:05:35.855 [pool-1-thread-1] INFO  com.intuit.karate - [print] in common with arg: null 
+19:05:35.855 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: ['math', 'physics']
+19:05:35.855 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: call read('classpath:' + common) { scope: 'isolated' }
+19:05:35.856 [pool-1-thread-3] INFO  com.intuit.karate - [print] in called3 
+19:05:35.857 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'subjects' with new value: get response //teacher[@department='science']/subject
+19:05:35.860 [pool-1-thread-1] INFO  com.intuit.karate - [print] in common with arg: {
+  "scope": "isolated"
+}
+ 
+19:05:35.864 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'subjects' with new value: get teachers //teacher[@department='science']/subject
+19:05:35.874 [pool-1-thread-2] INFO  com.intuit.karate - [print] in common with arg: null 
+19:05:35.881 [pool-1-thread-3] INFO  com.intuit.karate - [print] A 
+19:05:35.882 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "vitality": 2
+}
+ 
+19:05:35.887 [pool-1-thread-1] INFO  com.intuit.karate - [print] B 
+19:05:35.888 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "strength": 3
+}
+ 
+19:05:35.895 [pool-1-thread-4] INFO  com.intuit.karate - [print] C 
+19:05:35.898 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "intelligence": 5
+}
+ 
+19:05:35.912 [pool-1-thread-5] INFO  com.intuit.karate - [print] #################################### 
+19:05:35.913 [pool-1-thread-5] INFO  com.intuit.karate - [print] 413351957 
+19:05:35.918 [pool-1-thread-2] INFO  com.intuit.karate - [print] in common with arg: {
+  "scope": "shared"
+}
+ 
+19:05:35.928 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'nodes' with new value: get xml //hello
+19:05:35.941 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'xml' with new value: <root><hello foo="bar">world</hello></root>
+19:05:35.953 [pool-1-thread-2] INFO  com.intuit.karate - [print] pretty print: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:acc="http://foo/bar">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <acc:getAccountByPhoneNumber>
+      <acc:phoneNumber>#(phoneNumber)</acc:phoneNumber>
+      <acc:phoneNumberSearchOption>
+        <acc:searchWirelessInd>true</acc:searchWirelessInd>
+        <acc:searchVoipInd>false</acc:searchVoipInd>
+        <acc:searchTollFreeInd>false</acc:searchTollFreeInd>
+      </acc:phoneNumberSearchOption>
+    </acc:getAccountByPhoneNumber>
+  </soapenv:Body>
+</soapenv:Envelope>
+ 
+19:05:36.000 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'req' with new value: req
+19:05:36.182 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: karate.prettyXml(xml)
+19:05:36.202 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: foo
+19:05:36.205 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'xml' with new value: xml
+19:05:36.232 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'schema' with new value: schema
+19:05:36.469 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 9 of 35 (26 remaining) classpath:com/intuit/karate/junit4/demos/js-arrays.feature
+19:05:36.505 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 10 of 35 (25 remaining) classpath:com/intuit/karate/junit4/demos/lower-case.feature
+19:05:36.544 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 12 of 35 (23 remaining) classpath:com/intuit/karate/junit4/demos/not-equals.feature
+19:05:36.566 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+1 > Authorization: Basic MDcyMDY4MTYwMDc2MzI6dGVzdGUxMjM=
+1 > SOAPAction: 
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Content-Length: 8604
+1 > Host: api-rtf-dh.mdb.com.br
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:boor="http://www.accurate.com/acec/AcecBOSOAIntegration/BOOrderIntegration">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <boor:integrateOrderRequest>
+         <order xmlns="http://www.accurate.com/acec/order" xmlns:ns2="http://www.accurate.com/acec/InvoiceInfo">
+            <orderId>413351957</orderId>
+            <totalAmount>312.81</totalAmount>
+            <totalDiscountAmount>0.00</totalDiscountAmount>
+            <purchaseDate>2022-10-27T13:30:54-03:00</purchaseDate>
+            <sessionCreationDate>2022-10-27T13:30:54-03:00</sessionCreationDate>
+            <applicationVersion>1</applicationVersion>
+            <saleChannel>MDB</saleChannel>
+                                    <deliveries>
+               <delivery>
+                  <deliveryId>1</deliveryId>
+                  <orderId>413351957</orderId>
+                  <totalAmount>312.81</totalAmount>
+                  <totalDiscountAmount>0.00</totalDiscountAmount>
+                  <orderLineList>
+                                       <orderLine>
+                        <sku>7896085086229C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Light Adria 142g - Caixa com 32 unida</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                       <orderLine>
+                        <sku>7896085086205C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Tradicional Adria 142g - Caixa com 32</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                       <orderLine>
+                        <sku>7896085086212C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Integral Adria 142g - Caixa com 32 un</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                    </orderLineList>
+                  <freightAmount>
+                     <chargedAmount>0.00</chargedAmount>
+                     <actualAmount>0.00</actualAmount>
+                     <commercialAmount>0.00</commercialAmount>
+                     <freightTime>3</freightTime>
+                     <pickupLeadTime>0</pickupLeadTime>
+                     <logisticContract>NORMAL</logisticContract>
+                  </freightAmount>
+                  <wareHouseCNPJ>0</wareHouseCNPJ>
+                  <deliveryAddress>
+                     <addressId>53920</addressId>
+                     <recipientNm>J.M PEREIRA JUNIOR CIA LTDA</recipientNm>
+                     <address>RUA JACATIRAO</address>
+                     <addressNr>350</addressNr>
+                     <quarter>CAROLINA</quarter>
+                     <city>DUQUE DE CAXIAS</city>
+                     <state>RJ</state>
+                     <countryId>BR</countryId>
+                     <postalCd>25060140</postalCd>
+                     <postalCdIntl>25060140</postalCdIntl>
+                     <friendlyNm>J.M PEREIRA JUNIOR CIA LTDA</friendlyNm>
+                     <lift>false</lift>
+                     <intercom>false</intercom>
+                  </deliveryAddress>
+               </delivery>
+            </deliveries>
+            <customer>
+               <customerId>29331550000175</customerId>
+                              <documentNumber>29331550000175</documentNumber>
+               <name>J.M PEREIRA JUNIOR CIA LTDA</name>
+               <email>glicose70@gmail.com</email>
+               <phoneMobile>21971632449</phoneMobile>
+               <phoneOffice>21971632449</phoneOffice>
+               <state_subscription>80212526</state_subscription>
+               <representativeNm>J.M PEREIRA JUNIOR CIA LTDA</representativeNm>
+               <createDt>2022-09-14T12:10:39-03:00</createDt>
+               <updateDt>2022-09-14T12:10:39-03:00</updateDt>
+            </customer>
+            <billingAddress>
+               <addressId>53920</addressId>
+               <recipientNm>J.M PEREIRA JUNIOR CIA LTDA</recipientNm>
+               <address>RUA JACATIRAO</address>
+               <addressNr>350</addressNr>
+               <quarter>CAROLINA</quarter>
+               <city>DUQUE DE CAXIAS</city>
+               <state>RJ</state>
+               <countryId>BR</countryId>
+               <postalCd>25060140</postalCd>
+               <postalCdIntl>25060140</postalCdIntl>
+               <friendlyNm>J.M PEREIRA JUNIOR CIA LTDA</friendlyNm>
+               <lift>false</lift>
+               <intercom>false</intercom>
+            </billingAddress>
+            <paymentList>
+                              <payment>
+                                    <abstractPayment>
+                     <paymentType>CRL-28</paymentType>
+                     <value>312.81</value>
+                     <billType>SELLER</billType>
+                  </abstractPayment>
+                                 </payment>
+                           </paymentList>
+            <freightChargedAmount>0.00</freightChargedAmount>
+            <freightActualAmount>0.00</freightActualAmount>
+             <countDistinctSku>3</countDistinctSku>
+         </order>
+      </boor:integrateOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+19:05:36.589 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 13 of 35 (22 remaining) classpath:com/intuit/karate/junit4/demos/outline-dynamic-callonce.feature
+19:05:36.656 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 14 of 35 (21 remaining) classpath:com/intuit/karate/junit4/demos/outline-dynamic.feature
+19:05:36.716 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 15 of 35 (20 remaining) classpath:com/intuit/karate/junit4/demos/outline.feature
+19:05:36.740 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 16 of 35 (19 remaining) classpath:com/intuit/karate/junit4/demos/random-jsonpath.feature
+19:05:36.768 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 17 of 35 (18 remaining) classpath:com/intuit/karate/junit4/demos/read.feature
+19:05:36.799 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 18 of 35 (17 remaining) classpath:com/intuit/karate/junit4/demos/repeat.feature
+19:05:36.847 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 19 of 35 (16 remaining) classpath:com/intuit/karate/junit4/demos/replace.feature
+19:05:36.877 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 20 of 35 (15 remaining) classpath:com/intuit/karate/junit4/demos/scenario-variable-scope.feature
+19:05:36.939 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 21 of 35 (14 remaining) classpath:com/intuit/karate/junit4/demos/schema-like.feature
+19:05:36.966 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 35 (13 remaining) classpath:com/intuit/karate/junit4/demos/set.feature
+19:05:37.000 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 23 of 35 (12 remaining) classpath:com/intuit/karate/junit4/demos/sort-array.feature
+19:05:37.048 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 35 (11 remaining) classpath:com/intuit/karate/junit4/demos/tags.feature
+19:05:37.126 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 35 (10 remaining) classpath:com/intuit/karate/junit4/demos/type-conv.feature
+19:05:37.153 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 35 (9 remaining) classpath:com/intuit/karate/junit4/demos/xml-and-xpath.feature
+19:05:37.167 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 29 of 35 (6 remaining) classpath:com/intuit/karate/junit4/files/working-dir.feature
+19:05:37.207 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 31 of 35 (4 remaining) classpath:com/intuit/karate/junit4/files/relative/caller.feature
+19:06:18.726 [pool-1-thread-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to api-rtf-dh.mdb.com.br:443 [api-rtf-dh.mdb.com.br/187.28.89.60, api-rtf-dh.mdb.com.br/177.184.136.60] failed: Connection timed out: connect, http call failed after 42697 milliseconds for url: https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+19:06:18.726 [pool-1-thread-5] ERROR com.intuit.karate - classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature:23
+When soap action ''
+http call failed after 42697 milliseconds for url: https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature:23
+19:06:18.819 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 32 of 35 (3 remaining) classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature
+19:06:18.860 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 33 of 35 (2 remaining) classpath:com/intuit/karate/junit4/xml/xml-call.feature
+19:06:19.010 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 35 of 35 (0 remaining) classpath:com/intuit/karate/junit4/xml/xml.feature
+19:06:19.356 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:06:19.356 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:06:19.356 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668549979356
+19:06:19.365 [main] INFO  com.intuit.karate - [print] xray 
+19:06:19.371 [main] INFO  com.intuit.karate - [print] xray simple requirement 
+19:06:19.378 [main] INFO  com.intuit.karate - [print] xray simple test 
+19:06:19.384 [main] INFO  com.intuit.karate - [print] without additional tags 
+19:06:19.438 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:com/intuit/karate/junit4/customTags/customTags.feature
+19:06:19.681 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': foo
+19:06:19.682 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:06:19.683 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:12:04.129 [main] INFO  com.intuit.karate.Runner - karate.env is: 'confenvdir'
+19:12:04.573 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:12:04.573 [main] DEBUG com.intuit.karate.Suite - [config] src/test/resources/conf/karate-config-confenvdir.js
+19:12:04.575 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550324574
+19:12:06.312 [main] INFO  com.intuit.karate.Runner - karate.env is: 'custom'
+19:12:06.319 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:12:06.320 [main] DEBUG com.intuit.karate.Suite - [config] src/test/java/com/intuit/karate/junit4/config/karate-config.js
+19:12:06.320 [main] DEBUG com.intuit.karate.Suite - [config] src/test/java/com/intuit/karate/junit4/config/karate-config-custom.js
+19:12:06.321 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550326320
+19:12:06.387 [main] INFO  com.intuit.karate.Runner - karate.env is: 'confenv'
+19:12:06.388 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:12:06.388 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:12:06.389 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config-confenv.js
+19:12:06.389 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550326389
+19:12:06.739 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:12:06.740 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:12:06.742 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550326742
+19:12:06.745 [main] DEBUG com.intuit.karate.Suite - waiting for 35 features to complete
+19:12:06.951 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'fun' with new value: function(){ return karate.get('$foo.bar[*].baz') }
+19:12:06.952 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'res' with new value: call fun
+19:12:07.069 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: karate.jsonPath(cat, "$.kittens[?(@.name=='" + bob.name + "')]")[0]
+19:12:07.078 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: { id: '#(foo)', value: '#(bar.hello)' }
+19:12:07.098 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'user' with new value: { name: 'john', age: 21 }
+19:12:07.099 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'lang' with new value: 'en'
+19:12:07.103 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'user' with new value: <user><name>john</name></user>
+19:12:07.106 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'list' with new value: [ 1, 2, 3]
+19:12:07.106 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'data' with new value: karate.mapWithKey(list, 'val')
+19:12:07.109 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'list' with new value: [{ a: 1 }, { b: 2 }]
+19:12:07.110 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'data' with new value: karate.mapWithKey(list, 'foo')
+19:12:07.115 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'list' with new value: null
+19:12:07.117 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'data' with new value: karate.mapWithKey(list, 'foo')
+19:12:07.123 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'lang' with new value: 'en'
+19:12:07.124 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'session' with new value: <session><locale>#(lang)</locale><sessionUser>#(user)</sessionUser></session>
+19:12:07.149 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'kitnums' with new value: $cat.kittens[*].id
+19:12:07.223 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: 1 }
+19:12:07.223 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'bar' with new value: karate.append(foo, { b: 2})
+19:12:07.232 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "createDateTime": "2022-11-15T19:12:07.188500900",
+  "expiryDate": "2022-11-15T19:17:07.218232600"
+}
+ 
+19:12:07.234 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: { b: 'ab' }
+19:12:07.236 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: get response $[?(@.b=='ab')]
+19:12:07.249 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: { foo: 'bar' }
+19:12:07.250 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: (zone == 'zone1' ? { foo: '#string' } : { bar: '#number' })
+19:12:07.253 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: 'before'
+19:12:07.308 [pool-1-thread-4] INFO  com.intuit.karate - [print] [
+  {
+    "foo": "hello",
+    "bar": {
+      "baz": 1
+    }
+  },
+  {
+    "foo": "world",
+    "bar": [
+      "baz",
+      "ban"
+    ]
+  },
+  {
+    "foo": true,
+    "bar": true
+  }
+]
+ 
+19:12:07.324 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { }
+19:12:07.330 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: null }
+19:12:07.332 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: 1 }
+19:12:07.332 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: [{ entityId: 'foo'}, { entityId: 'bar'}]
+19:12:07.334 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: $expected[?(@.entityId=='foo')]
+19:12:07.335 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: karate.jsonPath(expected, "$[?(@.entityId=='foo')]")
+19:12:07.348 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: null }
+19:12:07.349 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: 1 }
+19:12:07.367 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { message: 'HELLO' }
+19:12:07.382 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: name,type
+Billie,LOL
+Bob,Wild
+19:12:07.383 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'bar' with new value: foo
+19:12:07.447 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expression' with new value: 'temperature.celsius * 1.8 + 32'
+19:12:07.604 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'res' with new value: karate.match(foo, { hello: '#number' } )
+19:12:07.617 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'res' with new value: karate.match("foo == { a: '#number' }")
+19:12:07.618 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: [1, 2, 3]
+19:12:07.618 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'res' with new value: karate.match("each foo == '#number'")
+19:12:07.622 [pool-1-thread-3] INFO  com.intuit.karate - [print] os: {
+  "name": "Windows 10",
+  "type": "windows"
+}
+ 
+19:12:07.632 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'bar' with new value: karate.appendTo(foo, [5, 6])
+19:12:07.649 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'fun' with new value: function(i){ return { foo: [1, 2]} }
+19:12:07.666 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: karate.lowerCase(json)
+19:12:07.681 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'xml' with new value: karate.lowerCase(xml)
+19:12:07.685 [pool-1-thread-4] INFO  com.intuit.karate - [print] a:  3 
+19:12:07.696 [pool-1-thread-3] INFO  com.intuit.karate - [print] a:  2 
+19:12:07.700 [pool-1-thread-2] INFO  com.intuit.karate - [print] a:  1 
+19:12:07.712 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: 'bar'
+19:12:07.713 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'test' with new value: 'foo'
+19:12:07.716 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'test' with new value: [1, 2]
+19:12:07.796 [pool-1-thread-2] INFO  com.intuit.karate - [print] row:  {
+  "name": "Bob",
+  "age": 5
+}
+ 
+19:12:07.797 [pool-1-thread-4] INFO  com.intuit.karate - [print] selected index: 1 
+19:12:07.800 [pool-1-thread-5] INFO  com.intuit.karate - [print] row:  {
+  "name": "Nyan",
+  "age": 7
+}
+ 
+19:12:07.886 [pool-1-thread-3] INFO  com.intuit.karate - >> lock acquired, begin callonce: fun
+19:12:07.891 [pool-1-thread-3] INFO  com.intuit.karate - << lock released, cached callonce: fun
+19:12:07.892 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'a' with new value: 2
+19:12:07.894 [pool-1-thread-5] WARN  com.intuit.karate - this thread waited 4 milliseconds for callonce lock: fun
+19:12:07.972 [pool-1-thread-3] INFO  com.intuit.karate - [print] pretty print:
+{
+  "id": "390",
+  "count": 4,
+  "odd": {
+    "price": "1.20",
+    "status": 2,
+    "ck": 12.2,
+    "name": "2"
+  },
+  "data": {
+    "countryId": 35,
+    "countryName": "Norway",
+    "status": 0,
+    "sportName": "Soccer",
+    "time": "2016-06-12T12:00:00Z"
+  },
+  "odds": [
+    {
+      "price": "1.30",
+      "status": 0,
+      "ck": 12.2,
+      "name": "1"
+    },
+    {
+      "price": "5.25",
+      "status": 1,
+      "name": "X"
+    },
+    {
+      "price": "2.70",
+      "status": 0,
+      "ck": 12.2,
+      "name": "0"
+    },
+    {
+      "price": "1.20",
+      "status": 2,
+      "name": "2"
+    }
+  ]
+}
+ 
+19:12:07.978 [pool-1-thread-2] INFO  com.intuit.karate - [print] pretty print:
+{
+  "foo": "bar",
+  "baz": [
+    1,
+    2,
+    3
+  ]
+}
+ 
+19:12:07.990 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 35 (34 remaining) classpath:com/intuit/karate/junit4/demos/examples.feature
+19:12:08.118 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: karate.fromString('<foo>bar</foo>')
+19:12:08.123 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: karate.fromString('random text')
+19:12:08.127 [pool-1-thread-3] WARN  com.intuit.karate - auto evaluation failed: js failed:
+>>>>
+01: random text
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:7 Expected ; but found text
+random text
+       ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioBridge.fromString(ScenarioBridge.java:471)
+
+19:12:08.148 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: ['foo', 'bar']
+19:12:08.162 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'data' with new value: data
+19:12:08.172 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(parseInt(foo))' }
+19:12:08.196 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'big' with new value: new java.math.BigDecimal(123123123123)
+19:12:08.198 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: 10
+19:12:08.198 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(foo)' }
+19:12:08.198 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: '10'
+19:12:08.199 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(~~foo)' }
+19:12:08.202 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: 100
+19:12:08.202 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(foo * 0.1)' }
+19:12:08.203 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { num: '#(big)' }
+19:12:08.203 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(~~(foo * 0.1))' }
+19:12:08.216 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'teacher' with new value: get response //teacher[@department='science']
+19:12:08.218 [pool-1-thread-2] INFO  com.intuit.karate - [print] in caller 
+19:12:08.219 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: ['math', 'physics']
+19:12:08.221 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'subjects' with new value: get response //teacher[@department='science']/subject
+19:12:08.223 [pool-1-thread-2] INFO  com.intuit.karate - [print] in common with arg: null 
+19:12:08.228 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'subjects' with new value: get teachers //teacher[@department='science']/subject
+19:12:08.231 [pool-1-thread-2] INFO  com.intuit.karate - [print] in called1 
+19:12:08.241 [pool-1-thread-3] INFO  com.intuit.karate - [print] in common with arg: null 
+19:12:08.244 [pool-1-thread-5] INFO  com.intuit.karate - [print] in common with arg: null 
+19:12:08.244 [pool-1-thread-2] INFO  com.intuit.karate - [print] in called2 
+19:12:08.244 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: call read('classpath:' + common) { scope: 'isolated' }
+19:12:08.250 [pool-1-thread-5] INFO  com.intuit.karate - [print] in common with arg: {
+  "scope": "isolated"
+}
+ 
+19:12:08.250 [pool-1-thread-2] INFO  com.intuit.karate - [print] in called3 
+19:12:08.254 [pool-1-thread-1] INFO  com.intuit.karate - [print] A 
+19:12:08.255 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "vitality": 2
+}
+ 
+19:12:08.256 [pool-1-thread-3] INFO  com.intuit.karate - [print] in common with arg: {
+  "scope": "shared"
+}
+ 
+19:12:08.261 [pool-1-thread-5] INFO  com.intuit.karate - [print] B 
+19:12:08.263 [pool-1-thread-5] INFO  com.intuit.karate - [print] {
+  "strength": 3
+}
+ 
+19:12:08.273 [pool-1-thread-4] INFO  com.intuit.karate - [print] #################################### 
+19:12:08.273 [pool-1-thread-4] INFO  com.intuit.karate - [print] 576103572 
+19:12:08.298 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'nodes' with new value: get xml //hello
+19:12:08.298 [pool-1-thread-1] INFO  com.intuit.karate - [print] C 
+19:12:08.299 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "intelligence": 5
+}
+ 
+19:12:08.305 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'xml' with new value: <root><hello foo="bar">world</hello></root>
+19:12:08.315 [pool-1-thread-3] INFO  com.intuit.karate - [print] pretty print: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:acc="http://foo/bar">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <acc:getAccountByPhoneNumber>
+      <acc:phoneNumber>#(phoneNumber)</acc:phoneNumber>
+      <acc:phoneNumberSearchOption>
+        <acc:searchWirelessInd>true</acc:searchWirelessInd>
+        <acc:searchVoipInd>false</acc:searchVoipInd>
+        <acc:searchTollFreeInd>false</acc:searchTollFreeInd>
+      </acc:phoneNumberSearchOption>
+    </acc:getAccountByPhoneNumber>
+  </soapenv:Body>
+</soapenv:Envelope>
+ 
+19:12:08.354 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'req' with new value: req
+19:12:08.479 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: foo
+19:12:08.482 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'xml' with new value: xml
+19:12:08.525 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: karate.prettyXml(xml)
+19:12:08.538 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'schema' with new value: schema
+19:12:08.869 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 9 of 35 (26 remaining) classpath:com/intuit/karate/junit4/demos/js-arrays.feature
+19:12:08.904 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 10 of 35 (25 remaining) classpath:com/intuit/karate/junit4/demos/lower-case.feature
+19:12:08.949 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 12 of 35 (23 remaining) classpath:com/intuit/karate/junit4/demos/not-equals.feature
+19:12:08.981 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 13 of 35 (22 remaining) classpath:com/intuit/karate/junit4/demos/outline-dynamic-callonce.feature
+19:12:09.007 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 14 of 35 (21 remaining) classpath:com/intuit/karate/junit4/demos/outline-dynamic.feature
+19:12:09.071 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+1 > Authorization: Basic MDcyMDY4MTYwMDc2MzI6dGVzdGUxMjM=
+1 > SOAPAction: 
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Content-Length: 8604
+1 > Host: api-rtf-dh.mdb.com.br
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:boor="http://www.accurate.com/acec/AcecBOSOAIntegration/BOOrderIntegration">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <boor:integrateOrderRequest>
+         <order xmlns="http://www.accurate.com/acec/order" xmlns:ns2="http://www.accurate.com/acec/InvoiceInfo">
+            <orderId>576103572</orderId>
+            <totalAmount>312.81</totalAmount>
+            <totalDiscountAmount>0.00</totalDiscountAmount>
+            <purchaseDate>2022-10-27T13:30:54-03:00</purchaseDate>
+            <sessionCreationDate>2022-10-27T13:30:54-03:00</sessionCreationDate>
+            <applicationVersion>1</applicationVersion>
+            <saleChannel>MDB</saleChannel>
+                                    <deliveries>
+               <delivery>
+                  <deliveryId>1</deliveryId>
+                  <orderId>576103572</orderId>
+                  <totalAmount>312.81</totalAmount>
+                  <totalDiscountAmount>0.00</totalDiscountAmount>
+                  <orderLineList>
+                                       <orderLine>
+                        <sku>7896085086229C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Light Adria 142g - Caixa com 32 unida</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                       <orderLine>
+                        <sku>7896085086205C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Tradicional Adria 142g - Caixa com 32</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                       <orderLine>
+                        <sku>7896085086212C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Integral Adria 142g - Caixa com 32 un</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                    </orderLineList>
+                  <freightAmount>
+                     <chargedAmount>0.00</chargedAmount>
+                     <actualAmount>0.00</actualAmount>
+                     <commercialAmount>0.00</commercialAmount>
+                     <freightTime>3</freightTime>
+                     <pickupLeadTime>0</pickupLeadTime>
+                     <logisticContract>NORMAL</logisticContract>
+                  </freightAmount>
+                  <wareHouseCNPJ>0</wareHouseCNPJ>
+                  <deliveryAddress>
+                     <addressId>53920</addressId>
+                     <recipientNm>J.M PEREIRA JUNIOR CIA LTDA</recipientNm>
+                     <address>RUA JACATIRAO</address>
+                     <addressNr>350</addressNr>
+                     <quarter>CAROLINA</quarter>
+                     <city>DUQUE DE CAXIAS</city>
+                     <state>RJ</state>
+                     <countryId>BR</countryId>
+                     <postalCd>25060140</postalCd>
+                     <postalCdIntl>25060140</postalCdIntl>
+                     <friendlyNm>J.M PEREIRA JUNIOR CIA LTDA</friendlyNm>
+                     <lift>false</lift>
+                     <intercom>false</intercom>
+                  </deliveryAddress>
+               </delivery>
+            </deliveries>
+            <customer>
+               <customerId>29331550000175</customerId>
+                              <documentNumber>29331550000175</documentNumber>
+               <name>J.M PEREIRA JUNIOR CIA LTDA</name>
+               <email>glicose70@gmail.com</email>
+               <phoneMobile>21971632449</phoneMobile>
+               <phoneOffice>21971632449</phoneOffice>
+               <state_subscription>80212526</state_subscription>
+               <representativeNm>J.M PEREIRA JUNIOR CIA LTDA</representativeNm>
+               <createDt>2022-09-14T12:10:39-03:00</createDt>
+               <updateDt>2022-09-14T12:10:39-03:00</updateDt>
+            </customer>
+            <billingAddress>
+               <addressId>53920</addressId>
+               <recipientNm>J.M PEREIRA JUNIOR CIA LTDA</recipientNm>
+               <address>RUA JACATIRAO</address>
+               <addressNr>350</addressNr>
+               <quarter>CAROLINA</quarter>
+               <city>DUQUE DE CAXIAS</city>
+               <state>RJ</state>
+               <countryId>BR</countryId>
+               <postalCd>25060140</postalCd>
+               <postalCdIntl>25060140</postalCdIntl>
+               <friendlyNm>J.M PEREIRA JUNIOR CIA LTDA</friendlyNm>
+               <lift>false</lift>
+               <intercom>false</intercom>
+            </billingAddress>
+            <paymentList>
+                              <payment>
+                                    <abstractPayment>
+                     <paymentType>CRL-28</paymentType>
+                     <value>312.81</value>
+                     <billType>SELLER</billType>
+                  </abstractPayment>
+                                 </payment>
+                           </paymentList>
+            <freightChargedAmount>0.00</freightChargedAmount>
+            <freightActualAmount>0.00</freightActualAmount>
+             <countDistinctSku>3</countDistinctSku>
+         </order>
+      </boor:integrateOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+19:12:09.097 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 15 of 35 (20 remaining) classpath:com/intuit/karate/junit4/demos/outline.feature
+19:12:09.118 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 16 of 35 (19 remaining) classpath:com/intuit/karate/junit4/demos/random-jsonpath.feature
+19:12:09.140 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 17 of 35 (18 remaining) classpath:com/intuit/karate/junit4/demos/read.feature
+19:12:09.171 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 18 of 35 (17 remaining) classpath:com/intuit/karate/junit4/demos/repeat.feature
+19:12:09.229 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 19 of 35 (16 remaining) classpath:com/intuit/karate/junit4/demos/replace.feature
+19:12:09.255 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 20 of 35 (15 remaining) classpath:com/intuit/karate/junit4/demos/scenario-variable-scope.feature
+19:12:09.326 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 21 of 35 (14 remaining) classpath:com/intuit/karate/junit4/demos/schema-like.feature
+19:12:09.345 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 35 (13 remaining) classpath:com/intuit/karate/junit4/demos/set.feature
+19:12:09.371 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 23 of 35 (12 remaining) classpath:com/intuit/karate/junit4/demos/sort-array.feature
+19:12:09.416 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 35 (11 remaining) classpath:com/intuit/karate/junit4/demos/tags.feature
+19:12:09.521 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 35 (10 remaining) classpath:com/intuit/karate/junit4/demos/type-conv.feature
+19:12:09.560 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 35 (9 remaining) classpath:com/intuit/karate/junit4/demos/xml-and-xpath.feature
+19:12:09.587 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 29 of 35 (6 remaining) classpath:com/intuit/karate/junit4/files/working-dir.feature
+19:12:09.639 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 31 of 35 (4 remaining) classpath:com/intuit/karate/junit4/files/relative/caller.feature
+19:12:51.222 [pool-1-thread-4] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to api-rtf-dh.mdb.com.br:443 [api-rtf-dh.mdb.com.br/187.28.89.60, api-rtf-dh.mdb.com.br/177.184.136.60] failed: Connection timed out: connect, http call failed after 42805 milliseconds for url: https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+19:12:51.223 [pool-1-thread-4] ERROR com.intuit.karate - classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature:23
+When soap action ''
+http call failed after 42805 milliseconds for url: https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature:23
+19:12:51.258 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 32 of 35 (3 remaining) classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature
+19:12:51.294 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 33 of 35 (2 remaining) classpath:com/intuit/karate/junit4/xml/xml-call.feature
+19:12:51.476 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 35 of 35 (0 remaining) classpath:com/intuit/karate/junit4/xml/xml.feature
+19:12:51.847 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:12:51.847 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:12:51.847 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550371847
+19:12:51.864 [main] INFO  com.intuit.karate - [print] xray 
+19:12:51.875 [main] INFO  com.intuit.karate - [print] xray simple requirement 
+19:12:51.884 [main] INFO  com.intuit.karate - [print] xray simple test 
+19:12:51.892 [main] INFO  com.intuit.karate - [print] without additional tags 
+19:12:51.955 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:com/intuit/karate/junit4/customTags/customTags.feature
+19:12:52.152 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': foo
+19:12:52.153 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:12:52.153 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:13:11.793 [main] WARN  com.intuit.karate.Runner - the @KarateOptions annotation is deprecated, please use Runner.builder()
+19:13:12.187 [main] WARN  com.intuit.karate.Runner - the @KarateOptions annotation is deprecated, please use Runner.builder()
+19:13:12.190 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:13:12.191 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:13:13.017 [main] INFO  com.intuit.karate - [print] #################################### 
+19:13:13.019 [main] INFO  com.intuit.karate - [print] 510485399 
+19:13:13.431 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+1 > Authorization: Basic MDcyMDY4MTYwMDc2MzI6dGVzdGUxMjM=
+1 > SOAPAction: 
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Content-Length: 8604
+1 > Host: api-rtf-dh.mdb.com.br
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:boor="http://www.accurate.com/acec/AcecBOSOAIntegration/BOOrderIntegration">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <boor:integrateOrderRequest>
+         <order xmlns="http://www.accurate.com/acec/order" xmlns:ns2="http://www.accurate.com/acec/InvoiceInfo">
+            <orderId>510485399</orderId>
+            <totalAmount>312.81</totalAmount>
+            <totalDiscountAmount>0.00</totalDiscountAmount>
+            <purchaseDate>2022-10-27T13:30:54-03:00</purchaseDate>
+            <sessionCreationDate>2022-10-27T13:30:54-03:00</sessionCreationDate>
+            <applicationVersion>1</applicationVersion>
+            <saleChannel>MDB</saleChannel>
+                                    <deliveries>
+               <delivery>
+                  <deliveryId>1</deliveryId>
+                  <orderId>510485399</orderId>
+                  <totalAmount>312.81</totalAmount>
+                  <totalDiscountAmount>0.00</totalDiscountAmount>
+                  <orderLineList>
+                                       <orderLine>
+                        <sku>7896085086229C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Light Adria 142g - Caixa com 32 unida</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                       <orderLine>
+                        <sku>7896085086205C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Tradicional Adria 142g - Caixa com 32</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                       <orderLine>
+                        <sku>7896085086212C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Integral Adria 142g - Caixa com 32 un</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                    </orderLineList>
+                  <freightAmount>
+                     <chargedAmount>0.00</chargedAmount>
+                     <actualAmount>0.00</actualAmount>
+                     <commercialAmount>0.00</commercialAmount>
+                     <freightTime>3</freightTime>
+                     <pickupLeadTime>0</pickupLeadTime>
+                     <logisticContract>NORMAL</logisticContract>
+                  </freightAmount>
+                  <wareHouseCNPJ>0</wareHouseCNPJ>
+                  <deliveryAddress>
+                     <addressId>53920</addressId>
+                     <recipientNm>J.M PEREIRA JUNIOR CIA LTDA</recipientNm>
+                     <address>RUA JACATIRAO</address>
+                     <addressNr>350</addressNr>
+                     <quarter>CAROLINA</quarter>
+                     <city>DUQUE DE CAXIAS</city>
+                     <state>RJ</state>
+                     <countryId>BR</countryId>
+                     <postalCd>25060140</postalCd>
+                     <postalCdIntl>25060140</postalCdIntl>
+                     <friendlyNm>J.M PEREIRA JUNIOR CIA LTDA</friendlyNm>
+                     <lift>false</lift>
+                     <intercom>false</intercom>
+                  </deliveryAddress>
+               </delivery>
+            </deliveries>
+            <customer>
+               <customerId>29331550000175</customerId>
+                              <documentNumber>29331550000175</documentNumber>
+               <name>J.M PEREIRA JUNIOR CIA LTDA</name>
+               <email>glicose70@gmail.com</email>
+               <phoneMobile>21971632449</phoneMobile>
+               <phoneOffice>21971632449</phoneOffice>
+               <state_subscription>80212526</state_subscription>
+               <representativeNm>J.M PEREIRA JUNIOR CIA LTDA</representativeNm>
+               <createDt>2022-09-14T12:10:39-03:00</createDt>
+               <updateDt>2022-09-14T12:10:39-03:00</updateDt>
+            </customer>
+            <billingAddress>
+               <addressId>53920</addressId>
+               <recipientNm>J.M PEREIRA JUNIOR CIA LTDA</recipientNm>
+               <address>RUA JACATIRAO</address>
+               <addressNr>350</addressNr>
+               <quarter>CAROLINA</quarter>
+               <city>DUQUE DE CAXIAS</city>
+               <state>RJ</state>
+               <countryId>BR</countryId>
+               <postalCd>25060140</postalCd>
+               <postalCdIntl>25060140</postalCdIntl>
+               <friendlyNm>J.M PEREIRA JUNIOR CIA LTDA</friendlyNm>
+               <lift>false</lift>
+               <intercom>false</intercom>
+            </billingAddress>
+            <paymentList>
+                              <payment>
+                                    <abstractPayment>
+                     <paymentType>CRL-28</paymentType>
+                     <value>312.81</value>
+                     <billType>SELLER</billType>
+                  </abstractPayment>
+                                 </payment>
+                           </paymentList>
+            <freightChargedAmount>0.00</freightChargedAmount>
+            <freightActualAmount>0.00</freightActualAmount>
+             <countDistinctSku>3</countDistinctSku>
+         </order>
+      </boor:integrateOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+19:13:55.554 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to api-rtf-dh.mdb.com.br:443 [api-rtf-dh.mdb.com.br/187.28.89.60, api-rtf-dh.mdb.com.br/177.184.136.60] failed: Connection timed out: connect, http call failed after 42404 milliseconds for url: https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+19:13:55.555 [main] ERROR com.intuit.karate - classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature:23
+When soap action ''
+http call failed after 42404 milliseconds for url: https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature:23
+19:18:13.558 [main] INFO  com.intuit.karate.Runner - karate.env is: 'confenvdir'
+19:18:13.952 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:18:13.953 [main] DEBUG com.intuit.karate.Suite - [config] src/test/resources/conf/karate-config-confenvdir.js
+19:18:13.955 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550693953
+19:18:15.286 [main] INFO  com.intuit.karate.Runner - karate.env is: 'custom'
+19:18:15.291 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:18:15.292 [main] DEBUG com.intuit.karate.Suite - [config] src/test/java/com/intuit/karate/junit4/config/karate-config.js
+19:18:15.292 [main] DEBUG com.intuit.karate.Suite - [config] src/test/java/com/intuit/karate/junit4/config/karate-config-custom.js
+19:18:15.294 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550695294
+19:18:15.376 [main] INFO  com.intuit.karate.Runner - karate.env is: 'confenv'
+19:18:15.378 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:18:15.378 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:18:15.379 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config-confenv.js
+19:18:15.379 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550695379
+19:18:15.766 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:18:15.766 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:18:15.769 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550695768
+19:18:15.771 [main] DEBUG com.intuit.karate.Suite - waiting for 32 features to complete
+19:18:15.957 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'fun' with new value: function(){ return karate.get('$foo.bar[*].baz') }
+19:18:15.959 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'res' with new value: call fun
+19:18:16.057 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: karate.jsonPath(cat, "$.kittens[?(@.name=='" + bob.name + "')]")[0]
+19:18:16.061 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: { id: '#(foo)', value: '#(bar.hello)' }
+19:18:16.062 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'list' with new value: [ 1, 2, 3]
+19:18:16.062 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'data' with new value: karate.mapWithKey(list, 'val')
+19:18:16.063 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'list' with new value: [{ a: 1 }, { b: 2 }]
+19:18:16.063 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'data' with new value: karate.mapWithKey(list, 'foo')
+19:18:16.066 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'list' with new value: null
+19:18:16.067 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'data' with new value: karate.mapWithKey(list, 'foo')
+19:18:16.075 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'user' with new value: { name: 'john', age: 21 }
+19:18:16.076 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'lang' with new value: 'en'
+19:18:16.078 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'user' with new value: <user><name>john</name></user>
+19:18:16.091 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'lang' with new value: 'en'
+19:18:16.091 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'session' with new value: <session><locale>#(lang)</locale><sessionUser>#(user)</sessionUser></session>
+19:18:16.098 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'kitnums' with new value: $cat.kittens[*].id
+19:18:16.135 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: 1 }
+19:18:16.136 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'bar' with new value: karate.append(foo, { b: 2})
+19:18:16.178 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "createDateTime": "2022-11-15T19:18:16.144843800",
+  "expiryDate": "2022-11-15T19:23:16.165362200"
+}
+ 
+19:18:16.183 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: { b: 'ab' }
+19:18:16.188 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: get response $[?(@.b=='ab')]
+19:18:16.198 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: { foo: 'bar' }
+19:18:16.198 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: (zone == 'zone1' ? { foo: '#string' } : { bar: '#number' })
+19:18:16.199 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: 'before'
+19:18:16.213 [pool-1-thread-4] INFO  com.intuit.karate - [print] [
+  {
+    "foo": "hello",
+    "bar": {
+      "baz": 1
+    }
+  },
+  {
+    "foo": "world",
+    "bar": [
+      "baz",
+      "ban"
+    ]
+  },
+  {
+    "foo": true,
+    "bar": true
+  }
+]
+ 
+19:18:16.275 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { }
+19:18:16.276 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: null }
+19:18:16.276 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: null }
+19:18:16.277 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: 1 }
+19:18:16.278 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { a: 1 }
+19:18:16.278 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: [{ entityId: 'foo'}, { entityId: 'bar'}]
+19:18:16.278 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: $expected[?(@.entityId=='foo')]
+19:18:16.279 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: karate.jsonPath(expected, "$[?(@.entityId=='foo')]")
+19:18:16.296 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: { message: 'HELLO' }
+19:18:16.303 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: name,type
+Billie,LOL
+Bob,Wild
+19:18:16.303 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'bar' with new value: foo
+19:18:16.351 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expression' with new value: 'temperature.celsius * 1.8 + 32'
+19:18:16.482 [pool-1-thread-5] INFO  com.intuit.karate - [print] os: {
+  "name": "Windows 10",
+  "type": "windows"
+}
+ 
+19:18:16.488 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'res' with new value: karate.match(foo, { hello: '#number' } )
+19:18:16.498 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'res' with new value: karate.match("foo == { a: '#number' }")
+19:18:16.499 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: [1, 2, 3]
+19:18:16.499 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'res' with new value: karate.match("each foo == '#number'")
+19:18:16.517 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'bar' with new value: karate.appendTo(foo, [5, 6])
+19:18:16.557 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: karate.lowerCase(json)
+19:18:16.559 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: 'bar'
+19:18:16.561 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'test' with new value: 'foo'
+19:18:16.565 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'test' with new value: [1, 2]
+19:18:16.576 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'fun' with new value: function(i){ return { foo: [1, 2]} }
+19:18:16.577 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'xml' with new value: karate.lowerCase(xml)
+19:18:16.582 [pool-1-thread-2] INFO  com.intuit.karate - [print] a:  3 
+19:18:16.587 [pool-1-thread-4] INFO  com.intuit.karate - [print] a:  2 
+19:18:16.592 [pool-1-thread-5] INFO  com.intuit.karate - [print] a:  1 
+19:18:16.656 [pool-1-thread-3] INFO  com.intuit.karate - [print] row:  {
+  "name": "Bob",
+  "age": 5
+}
+ 
+19:18:16.686 [pool-1-thread-2] INFO  com.intuit.karate - [print] row:  {
+  "name": "Nyan",
+  "age": 7
+}
+ 
+19:18:16.705 [pool-1-thread-3] INFO  com.intuit.karate - [print] selected index: 1 
+19:18:16.796 [pool-1-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: fun
+19:18:16.818 [pool-1-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: fun
+19:18:16.820 [pool-1-thread-4] WARN  com.intuit.karate - this thread waited 15 milliseconds for callonce lock: fun
+19:18:16.821 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'a' with new value: 2
+19:18:16.828 [pool-1-thread-2] INFO  com.intuit.karate - [print] pretty print:
+{
+  "id": "390",
+  "count": 4,
+  "odd": {
+    "price": "1.20",
+    "status": 2,
+    "ck": 12.2,
+    "name": "2"
+  },
+  "data": {
+    "countryId": 35,
+    "countryName": "Norway",
+    "status": 0,
+    "sportName": "Soccer",
+    "time": "2016-06-12T12:00:00Z"
+  },
+  "odds": [
+    {
+      "price": "1.30",
+      "status": 0,
+      "ck": 12.2,
+      "name": "1"
+    },
+    {
+      "price": "5.25",
+      "status": 1,
+      "name": "X"
+    },
+    {
+      "price": "2.70",
+      "status": 0,
+      "ck": 12.2,
+      "name": "0"
+    },
+    {
+      "price": "1.20",
+      "status": 2,
+      "name": "2"
+    }
+  ]
+}
+ 
+19:18:16.871 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 32 (31 remaining) classpath:com/intuit/karate/junit4/demos/examples.feature
+19:18:16.872 [pool-1-thread-5] INFO  com.intuit.karate - [print] pretty print:
+{
+  "foo": "bar",
+  "baz": [
+    1,
+    2,
+    3
+  ]
+}
+ 
+19:18:17.036 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: karate.fromString('<foo>bar</foo>')
+19:18:17.044 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'temp' with new value: karate.fromString('random text')
+19:18:17.060 [pool-1-thread-5] WARN  com.intuit.karate - auto evaluation failed: js failed:
+>>>>
+01: random text
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:7 Expected ; but found text
+random text
+       ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioBridge.fromString(ScenarioBridge.java:471)
+
+19:18:17.099 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'data' with new value: data
+19:18:17.105 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(parseInt(foo))' }
+19:18:17.106 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: ['foo', 'bar']
+19:18:17.111 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'big' with new value: new java.math.BigDecimal(123123123123)
+19:18:17.127 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: 10
+19:18:17.128 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(foo)' }
+19:18:17.128 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: '10'
+19:18:17.128 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(~~foo)' }
+19:18:17.128 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { num: '#(big)' }
+19:18:17.133 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'foo' with new value: 100
+19:18:17.136 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(foo * 0.1)' }
+19:18:17.138 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'json' with new value: { bar: '#(~~(foo * 0.1))' }
+19:18:17.177 [pool-1-thread-5] INFO  com.intuit.karate - [print] in caller 
+19:18:17.184 [pool-1-thread-5] INFO  com.intuit.karate - [print] in common with arg: null 
+19:18:17.193 [pool-1-thread-5] INFO  com.intuit.karate - [print] in called1 
+19:18:17.205 [pool-1-thread-5] INFO  com.intuit.karate - [print] in called2 
+19:18:17.211 [pool-1-thread-5] INFO  com.intuit.karate - [print] in called3 
+19:18:17.221 [pool-1-thread-4] INFO  com.intuit.karate - [print] in common with arg: null 
+19:18:17.222 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'result' with new value: call read('classpath:' + common) { scope: 'isolated' }
+19:18:17.226 [pool-1-thread-4] INFO  com.intuit.karate - [print] in common with arg: {
+  "scope": "isolated"
+}
+ 
+19:18:17.234 [pool-1-thread-3] INFO  com.intuit.karate - [print] in common with arg: null 
+19:18:17.246 [pool-1-thread-5] INFO  com.intuit.karate - [print] #################################### 
+19:18:17.247 [pool-1-thread-5] INFO  com.intuit.karate - [print] 205566273 
+19:18:17.258 [pool-1-thread-3] INFO  com.intuit.karate - [print] in common with arg: {
+  "scope": "shared"
+}
+ 
+19:18:17.317 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'teacher' with new value: get response //teacher[@department='science']
+19:18:17.323 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'expected' with new value: ['math', 'physics']
+19:18:17.326 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'subjects' with new value: get response //teacher[@department='science']/subject
+19:18:17.331 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'subjects' with new value: get teachers //teacher[@department='science']/subject
+19:18:17.662 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 9 of 32 (23 remaining) classpath:com/intuit/karate/junit4/demos/js-arrays.feature
+19:18:17.697 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 10 of 32 (22 remaining) classpath:com/intuit/karate/junit4/demos/lower-case.feature
+19:18:17.743 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 12 of 32 (20 remaining) classpath:com/intuit/karate/junit4/demos/not-equals.feature
+19:18:17.778 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 13 of 32 (19 remaining) classpath:com/intuit/karate/junit4/demos/outline-dynamic-callonce.feature
+19:18:17.803 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 14 of 32 (18 remaining) classpath:com/intuit/karate/junit4/demos/outline-dynamic.feature
+19:18:17.879 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 15 of 32 (17 remaining) classpath:com/intuit/karate/junit4/demos/outline.feature
+19:18:17.915 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 16 of 32 (16 remaining) classpath:com/intuit/karate/junit4/demos/random-jsonpath.feature
+19:18:17.948 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+1 > Authorization: Basic MDcyMDY4MTYwMDc2MzI6dGVzdGUxMjM=
+1 > SOAPAction: 
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Content-Length: 8604
+1 > Host: api-rtf-dh.mdb.com.br
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:boor="http://www.accurate.com/acec/AcecBOSOAIntegration/BOOrderIntegration">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <boor:integrateOrderRequest>
+         <order xmlns="http://www.accurate.com/acec/order" xmlns:ns2="http://www.accurate.com/acec/InvoiceInfo">
+            <orderId>205566273</orderId>
+            <totalAmount>312.81</totalAmount>
+            <totalDiscountAmount>0.00</totalDiscountAmount>
+            <purchaseDate>2022-10-27T13:30:54-03:00</purchaseDate>
+            <sessionCreationDate>2022-10-27T13:30:54-03:00</sessionCreationDate>
+            <applicationVersion>1</applicationVersion>
+            <saleChannel>MDB</saleChannel>
+                                    <deliveries>
+               <delivery>
+                  <deliveryId>1</deliveryId>
+                  <orderId>205566273</orderId>
+                  <totalAmount>312.81</totalAmount>
+                  <totalDiscountAmount>0.00</totalDiscountAmount>
+                  <orderLineList>
+                                       <orderLine>
+                        <sku>7896085086229C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Light Adria 142g - Caixa com 32 unida</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                       <orderLine>
+                        <sku>7896085086205C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Tradicional Adria 142g - Caixa com 32</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                       <orderLine>
+                        <sku>7896085086212C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Integral Adria 142g - Caixa com 32 un</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                    </orderLineList>
+                  <freightAmount>
+                     <chargedAmount>0.00</chargedAmount>
+                     <actualAmount>0.00</actualAmount>
+                     <commercialAmount>0.00</commercialAmount>
+                     <freightTime>3</freightTime>
+                     <pickupLeadTime>0</pickupLeadTime>
+                     <logisticContract>NORMAL</logisticContract>
+                  </freightAmount>
+                  <wareHouseCNPJ>0</wareHouseCNPJ>
+                  <deliveryAddress>
+                     <addressId>53920</addressId>
+                     <recipientNm>J.M PEREIRA JUNIOR CIA LTDA</recipientNm>
+                     <address>RUA JACATIRAO</address>
+                     <addressNr>350</addressNr>
+                     <quarter>CAROLINA</quarter>
+                     <city>DUQUE DE CAXIAS</city>
+                     <state>RJ</state>
+                     <countryId>BR</countryId>
+                     <postalCd>25060140</postalCd>
+                     <postalCdIntl>25060140</postalCdIntl>
+                     <friendlyNm>J.M PEREIRA JUNIOR CIA LTDA</friendlyNm>
+                     <lift>false</lift>
+                     <intercom>false</intercom>
+                  </deliveryAddress>
+               </delivery>
+            </deliveries>
+            <customer>
+               <customerId>29331550000175</customerId>
+                              <documentNumber>29331550000175</documentNumber>
+               <name>J.M PEREIRA JUNIOR CIA LTDA</name>
+               <email>glicose70@gmail.com</email>
+               <phoneMobile>21971632449</phoneMobile>
+               <phoneOffice>21971632449</phoneOffice>
+               <state_subscription>80212526</state_subscription>
+               <representativeNm>J.M PEREIRA JUNIOR CIA LTDA</representativeNm>
+               <createDt>2022-09-14T12:10:39-03:00</createDt>
+               <updateDt>2022-09-14T12:10:39-03:00</updateDt>
+            </customer>
+            <billingAddress>
+               <addressId>53920</addressId>
+               <recipientNm>J.M PEREIRA JUNIOR CIA LTDA</recipientNm>
+               <address>RUA JACATIRAO</address>
+               <addressNr>350</addressNr>
+               <quarter>CAROLINA</quarter>
+               <city>DUQUE DE CAXIAS</city>
+               <state>RJ</state>
+               <countryId>BR</countryId>
+               <postalCd>25060140</postalCd>
+               <postalCdIntl>25060140</postalCdIntl>
+               <friendlyNm>J.M PEREIRA JUNIOR CIA LTDA</friendlyNm>
+               <lift>false</lift>
+               <intercom>false</intercom>
+            </billingAddress>
+            <paymentList>
+                              <payment>
+                                    <abstractPayment>
+                     <paymentType>CRL-28</paymentType>
+                     <value>312.81</value>
+                     <billType>SELLER</billType>
+                  </abstractPayment>
+                                 </payment>
+                           </paymentList>
+            <freightChargedAmount>0.00</freightChargedAmount>
+            <freightActualAmount>0.00</freightActualAmount>
+             <countDistinctSku>3</countDistinctSku>
+         </order>
+      </boor:integrateOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+19:18:17.954 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 17 of 32 (15 remaining) classpath:com/intuit/karate/junit4/demos/read.feature
+19:18:17.990 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 18 of 32 (14 remaining) classpath:com/intuit/karate/junit4/demos/repeat.feature
+19:18:18.030 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 19 of 32 (13 remaining) classpath:com/intuit/karate/junit4/demos/replace.feature
+19:18:18.059 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 20 of 32 (12 remaining) classpath:com/intuit/karate/junit4/demos/scenario-variable-scope.feature
+19:18:18.136 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 21 of 32 (11 remaining) classpath:com/intuit/karate/junit4/demos/schema-like.feature
+19:18:18.164 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 32 (10 remaining) classpath:com/intuit/karate/junit4/demos/set.feature
+19:18:18.190 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 23 of 32 (9 remaining) classpath:com/intuit/karate/junit4/demos/sort-array.feature
+19:18:18.223 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 32 (8 remaining) classpath:com/intuit/karate/junit4/demos/tags.feature
+19:18:18.323 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 25 of 32 (7 remaining) classpath:com/intuit/karate/junit4/demos/type-conv.feature
+19:18:18.370 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 32 (6 remaining) classpath:com/intuit/karate/junit4/demos/xml-and-xpath.feature
+19:18:18.393 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 29 of 32 (3 remaining) classpath:com/intuit/karate/junit4/files/working-dir.feature
+19:18:18.462 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 31 of 32 (1 remaining) classpath:com/intuit/karate/junit4/files/relative/caller.feature
+19:19:00.142 [pool-1-thread-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to api-rtf-dh.mdb.com.br:443 [api-rtf-dh.mdb.com.br/187.28.89.60, api-rtf-dh.mdb.com.br/177.184.136.60] failed: Connection timed out: connect, http call failed after 42776 milliseconds for url: https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+19:19:00.142 [pool-1-thread-5] ERROR com.intuit.karate - classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature:23
+When soap action ''
+http call failed after 42776 milliseconds for url: https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature:23
+19:19:00.160 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 32 of 32 (0 remaining) classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature
+19:19:00.481 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:19:00.482 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:19:00.483 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550740482
+19:19:00.494 [main] INFO  com.intuit.karate - [print] xray 
+19:19:00.502 [main] INFO  com.intuit.karate - [print] xray simple requirement 
+19:19:00.509 [main] INFO  com.intuit.karate - [print] xray simple test 
+19:19:00.516 [main] INFO  com.intuit.karate - [print] without additional tags 
+19:19:00.585 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:com/intuit/karate/junit4/customTags/customTags.feature
+19:19:00.778 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': foo
+19:19:00.778 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:19:00.779 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:20:51.101 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': -t @pedido_faturado
+19:20:51.224 [main] INFO  com.intuit.karate.Runner - karate.env is: 'confenvdir'
+19:20:51.619 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:20:51.620 [main] DEBUG com.intuit.karate.Suite - [config] src/test/resources/conf/karate-config-confenvdir.js
+19:20:51.621 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550851621
+19:20:53.007 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': -t @pedido_faturado
+19:20:53.011 [main] INFO  com.intuit.karate.Runner - karate.env is: 'custom'
+19:20:53.017 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:20:53.018 [main] DEBUG com.intuit.karate.Suite - [config] src/test/java/com/intuit/karate/junit4/config/karate-config.js
+19:20:53.019 [main] DEBUG com.intuit.karate.Suite - [config] src/test/java/com/intuit/karate/junit4/config/karate-config-custom.js
+19:20:53.019 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550853019
+19:20:53.101 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': -t @pedido_faturado
+19:20:53.104 [main] INFO  com.intuit.karate.Runner - karate.env is: 'confenv'
+19:20:53.106 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:20:53.107 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:20:53.108 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config-confenv.js
+19:20:53.108 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550853108
+19:20:53.189 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': -t @pedido_faturado
+19:20:53.477 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:20:53.477 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:20:53.478 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550853478
+19:20:53.480 [main] DEBUG com.intuit.karate.Suite - waiting for 32 features to complete
+19:20:53.707 [pool-1-thread-1] INFO  com.intuit.karate - [print] #################################### 
+19:20:53.708 [pool-1-thread-1] INFO  com.intuit.karate - [print] 421935229 
+19:20:53.858 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 13 of 32 (19 remaining) classpath:com/intuit/karate/junit4/demos/outline-dynamic-callonce.feature
+19:20:54.176 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+1 > Authorization: Basic MDcyMDY4MTYwMDc2MzI6dGVzdGUxMjM=
+1 > SOAPAction: 
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Content-Length: 8604
+1 > Host: api-rtf-dh.mdb.com.br
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:boor="http://www.accurate.com/acec/AcecBOSOAIntegration/BOOrderIntegration">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <boor:integrateOrderRequest>
+         <order xmlns="http://www.accurate.com/acec/order" xmlns:ns2="http://www.accurate.com/acec/InvoiceInfo">
+            <orderId>421935229</orderId>
+            <totalAmount>312.81</totalAmount>
+            <totalDiscountAmount>0.00</totalDiscountAmount>
+            <purchaseDate>2022-10-27T13:30:54-03:00</purchaseDate>
+            <sessionCreationDate>2022-10-27T13:30:54-03:00</sessionCreationDate>
+            <applicationVersion>1</applicationVersion>
+            <saleChannel>MDB</saleChannel>
+                                    <deliveries>
+               <delivery>
+                  <deliveryId>1</deliveryId>
+                  <orderId>421935229</orderId>
+                  <totalAmount>312.81</totalAmount>
+                  <totalDiscountAmount>0.00</totalDiscountAmount>
+                  <orderLineList>
+                                       <orderLine>
+                        <sku>7896085086229C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Light Adria 142g - Caixa com 32 unida</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                       <orderLine>
+                        <sku>7896085086205C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Tradicional Adria 142g - Caixa com 32</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                       <orderLine>
+                        <sku>7896085086212C32</sku>
+                        <skuType>NOR</skuType>
+                        <quantity>1</quantity>
+                        <catalogListPrice>104.27</catalogListPrice>
+                        <listPrice>104.27</listPrice>
+                        <salePrice>104.27</salePrice>
+                        <unconditionalDiscountAmount>0.00</unconditionalDiscountAmount>
+                        <roundingDiscountAmount>0.00</roundingDiscountAmount>
+                        <promotionList>
+                                                </promotionList>
+                        <freight>
+                           <chargedAmount>0.00</chargedAmount>
+                           <actualAmount>0.00</actualAmount>
+                           <commercialAmount>0.00</commercialAmount>
+                           <freightTime>3</freightTime>
+                           <pickupLeadTime>0</pickupLeadTime>
+                           <logisticContract>NORMAL</logisticContract>
+                        </freight>
+                                                <service>false</service>
+                        <skuName>Torrada Integral Adria 142g - Caixa com 32 un</skuName>
+                        <productBrandName>Adria</productBrandName>
+                     </orderLine>
+                                    </orderLineList>
+                  <freightAmount>
+                     <chargedAmount>0.00</chargedAmount>
+                     <actualAmount>0.00</actualAmount>
+                     <commercialAmount>0.00</commercialAmount>
+                     <freightTime>3</freightTime>
+                     <pickupLeadTime>0</pickupLeadTime>
+                     <logisticContract>NORMAL</logisticContract>
+                  </freightAmount>
+                  <wareHouseCNPJ>0</wareHouseCNPJ>
+                  <deliveryAddress>
+                     <addressId>53920</addressId>
+                     <recipientNm>J.M PEREIRA JUNIOR CIA LTDA</recipientNm>
+                     <address>RUA JACATIRAO</address>
+                     <addressNr>350</addressNr>
+                     <quarter>CAROLINA</quarter>
+                     <city>DUQUE DE CAXIAS</city>
+                     <state>RJ</state>
+                     <countryId>BR</countryId>
+                     <postalCd>25060140</postalCd>
+                     <postalCdIntl>25060140</postalCdIntl>
+                     <friendlyNm>J.M PEREIRA JUNIOR CIA LTDA</friendlyNm>
+                     <lift>false</lift>
+                     <intercom>false</intercom>
+                  </deliveryAddress>
+               </delivery>
+            </deliveries>
+            <customer>
+               <customerId>29331550000175</customerId>
+                              <documentNumber>29331550000175</documentNumber>
+               <name>J.M PEREIRA JUNIOR CIA LTDA</name>
+               <email>glicose70@gmail.com</email>
+               <phoneMobile>21971632449</phoneMobile>
+               <phoneOffice>21971632449</phoneOffice>
+               <state_subscription>80212526</state_subscription>
+               <representativeNm>J.M PEREIRA JUNIOR CIA LTDA</representativeNm>
+               <createDt>2022-09-14T12:10:39-03:00</createDt>
+               <updateDt>2022-09-14T12:10:39-03:00</updateDt>
+            </customer>
+            <billingAddress>
+               <addressId>53920</addressId>
+               <recipientNm>J.M PEREIRA JUNIOR CIA LTDA</recipientNm>
+               <address>RUA JACATIRAO</address>
+               <addressNr>350</addressNr>
+               <quarter>CAROLINA</quarter>
+               <city>DUQUE DE CAXIAS</city>
+               <state>RJ</state>
+               <countryId>BR</countryId>
+               <postalCd>25060140</postalCd>
+               <postalCdIntl>25060140</postalCdIntl>
+               <friendlyNm>J.M PEREIRA JUNIOR CIA LTDA</friendlyNm>
+               <lift>false</lift>
+               <intercom>false</intercom>
+            </billingAddress>
+            <paymentList>
+                              <payment>
+                                    <abstractPayment>
+                     <paymentType>CRL-28</paymentType>
+                     <value>312.81</value>
+                     <billType>SELLER</billType>
+                  </abstractPayment>
+                                 </payment>
+                           </paymentList>
+            <freightChargedAmount>0.00</freightChargedAmount>
+            <freightActualAmount>0.00</freightActualAmount>
+             <countDistinctSku>3</countDistinctSku>
+         </order>
+      </boor:integrateOrderRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+19:21:36.328 [pool-1-thread-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to api-rtf-dh.mdb.com.br:443 [api-rtf-dh.mdb.com.br/187.28.89.60, api-rtf-dh.mdb.com.br/177.184.136.60] failed: Connection timed out: connect, http call failed after 42463 milliseconds for url: https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+19:21:36.329 [pool-1-thread-1] ERROR com.intuit.karate - classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature:23
+When soap action ''
+http call failed after 42463 milliseconds for url: https://api-rtf-dh.mdb.com.br/mdb-rf-dev-b2b-eapi/BOOrderIntegration/BOOrderIntegration
+classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature:23
+19:21:36.444 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 32 of 32 (0 remaining) classpath:com/intuit/karate/junit4/xml/pedido_faturado.feature
+19:21:36.515 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': -t @pedido_faturado
+19:21:36.664 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:21:36.665 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:21:36.666 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1668550896665
+19:21:36.733 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': -t @pedido_faturado
+19:21:36.842 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': -t @pedido_faturado
+19:21:36.844 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': foo
+19:21:36.844 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-base.js
+19:21:36.845 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
